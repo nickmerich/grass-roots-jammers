@@ -9,19 +9,39 @@ const faqs = [
   },
   {
     question: "What do I get as a Founding Member?",
-    answer: "Lifetime access to premium features, exclusive founding member badge, priority support, early access to new features, and the ability to influence our roadmap."
+    answer: "You'll receive lifetime access to the core app, a permanent Founding Member badge, invites to launch jams, access to our private Slack channel, and early access to future features."
   },
   {
     question: "Is there a cost to join?",
-    answer: "No! Becoming a Founding Jammer is completely free. We just ask that you be an active participant in our community and provide feedback."
+    answer: "No. Founding Member access is currently free. All we ask is your feedback and participation to help us grow."
   },
   {
     question: "What happens after 100 members?",
-    answer: "Once we reach 100 founding members, we'll launch publicly with paid tiers. Founding members keep their benefits for life at no cost."
+    answer: "Once we hit 100, we'll close this tier and begin our public launch campaign. Founding Members will retain their exclusive perks forever."
   },
   {
     question: "Do I need to know how to play bluegrass?",
-    answer: "Not at all! Our app is designed for all skill levels, from complete beginners to experienced players. We'll help you learn and grow."
+    answer: "Not at all! We're built for beginners and pros alike. If you're curious about bluegrass, you're in the right place."
+  },
+  {
+    question: "What makes LearnGrass different from other music apps?",
+    answer: "LearnGrass honors the authentic bluegrass learning tradition while making it accessible to modern learners. We combine community-based learning with interactive tools, resulting in 67% retention at 90 days compared to the industry average of 2%."
+  },
+  {
+    question: "How does the app help beginners who've never played bluegrass?",
+    answer: "We start where bluegrass does: with listening and repetition. The app walks you from basic chord progressions to real soloing, helping beginners feel welcome and capable."
+  },
+  {
+    question: "Can advanced players benefit from the app?",
+    answer: "Absolutely. Advanced users discover rare songs, track progress, and mentor newer players. Even master musicians keep learning—and LearnGrass supports that."
+  },
+  {
+    question: "Is the app suitable for different instruments?",
+    answer: "Yes! We support guitar, banjo, mandolin, fiddle, bass, dobro, and vocals—each with a tailored path."
+  },
+  {
+    question: "How does LearnGrass support live jam participation?",
+    answer: "You'll be prepared with chord charts, lyrics, etiquette guides, and a \"Near Me\" jam finder to show up ready."
   }
 ];
 
