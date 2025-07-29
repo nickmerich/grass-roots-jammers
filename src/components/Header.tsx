@@ -5,8 +5,8 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
-              <img src="/lovable-uploads/75e9d92f-f567-4158-bcb2-95cc367d5a04.png" alt="Grass" className="w-12 h-12" />
+            <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+              <img src="/lovable-uploads/75e9d92f-f567-4158-bcb2-95cc367d5a04.png" alt="Grass" className="w-14 h-14" />
             </div>
             
           </div>
