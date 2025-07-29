@@ -134,10 +134,10 @@ const HeroSection = () => {
                 Your #1 Bluegrass Jam Companion
               </p>
               
-              <p className="text-lg text-emerald-700 leading-relaxed max-w-2xl">
-                Shape the future of bluegrass jamming. Claim your spot, unlock exclusive recognition, 
-                and help grow a vibrant new community.
-              </p>
+              <p className="text-lg text-emerald-700 leading-relaxed max-w-2xl">Grass helps you master 200+ bluegrass standards, find jam sessions, and record your progress — all in one app.
+
+
+            </p>
             </div>
             
             {/* CTA Buttons */}
