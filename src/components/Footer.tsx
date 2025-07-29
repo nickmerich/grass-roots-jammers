@@ -1,6 +1,33 @@
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useState } from "react";
+
+const faqs = [
+  {
+    question: "What is a Founding Jammer?",
+    answer: "Founding Jammers are the first 100 members who help shape the future of our bluegrass community. You'll get exclusive recognition, early access to features, and a voice in our development process."
+  },
+  {
+    question: "What do I get as a Founding Member?",
+    answer: "Lifetime access to premium features, exclusive founding member badge, priority support, early access to new features, and the ability to influence our roadmap."
+  },
+  {
+    question: "Is there a cost to join?",
+    answer: "No! Becoming a Founding Jammer is completely free. We just ask that you be an active participant in our community and provide feedback."
+  },
+  {
+    question: "What happens after 100 members?",
+    answer: "Once we reach 100 founding members, we'll launch publicly with paid tiers. Founding members keep their benefits for life at no cost."
+  },
+  {
+    question: "Do I need to know how to play bluegrass?",
+    answer: "Not at all! Our app is designed for all skill levels, from complete beginners to experienced players. We'll help you learn and grow."
+  }
+];
 
 const Footer = () => {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
   return (
     <footer className="relative py-16 bg-gradient-to-br from-emerald-50 to-green-100 border-t border-emerald-200 overflow-hidden">
       {/* Floating Musical Elements */}
@@ -13,9 +40,44 @@ const Footer = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
+        {/* FAQ Section */}
+        <div className="mb-16">
+          <h3 className="text-4xl font-bold text-emerald-800 mb-8 text-center">
+            Frequently Asked Questions
+          </h3>
+          <div className="max-w-4xl mx-auto space-y-4">
+            {faqs.map((faq, index) => (
+              <Card 
+                key={index}
+                className="bg-white/80 border border-emerald-200 hover:bg-white/90 transition-all duration-300 hover:shadow-lg"
+              >
+                <CardHeader 
+                  className="cursor-pointer"
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                >
+                  <CardTitle className="text-lg text-emerald-800 flex justify-between items-center">
+                    {faq.question}
+                    <span className="text-emerald-600 text-xl">
+                      {openFaq === index ? '−' : '+'}
+                    </span>
+                  </CardTitle>
+                </CardHeader>
+                {openFaq === index && (
+                  <CardContent className="pt-0">
+                    <p className="text-emerald-700 leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </CardContent>
+                )}
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Contact Section */}
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-emerald-800 mb-4">
-            Questions? Want to know more before signing up?
+            Still have questions?
           </h3>
           <p className="text-lg text-emerald-700 mb-6 max-w-2xl mx-auto">
             We're here to help you make the right decision for your bluegrass journey.
