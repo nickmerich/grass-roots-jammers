@@ -78,6 +78,35 @@ const HeroSection = () => {
         <div className="absolute bottom-80 left-1/4 text-green-500/60 text-xl animate-bounce delay-2000" style={{
         animationDuration: '4s'
       }}>♭</div>
+        
+        {/* Grass elements */}
+        <div className="absolute bottom-16 left-16 animate-float-slow text-4xl opacity-50 filter drop-shadow-lg">🌱</div>
+        <div className="absolute bottom-32 right-32 animate-float-medium text-3xl opacity-60 filter drop-shadow-lg">🌿</div>
+        <div className="absolute bottom-20 left-1/2 animate-float-fast text-2xl opacity-40 filter drop-shadow-lg">🍃</div>
+        <div className="absolute bottom-40 right-16 animate-pulse text-3xl opacity-50 filter drop-shadow-lg delay-1000">🌾</div>
+        <div className="absolute bottom-12 left-1/3 animate-bounce text-2xl opacity-45 filter drop-shadow-lg delay-500" style={{
+        animationDuration: '3.5s'
+      }}>🌱</div>
+        <div className="absolute bottom-28 right-1/3 animate-float-slow text-3xl opacity-55 filter drop-shadow-lg delay-800">🌿</div>
+        
+        {/* Grass blade SVG elements */}
+        <div className="absolute bottom-8 left-8 text-green-400/40 animate-pulse delay-2000">
+          <svg width="24" height="32" viewBox="0 0 24 32" fill="currentColor">
+            <path d="M12 32C12 32 8 28 8 20C8 16 10 12 12 0C14 12 16 16 16 20C16 28 12 32 12 32Z" />
+          </svg>
+        </div>
+        <div className="absolute bottom-12 right-12 text-emerald-400/50 animate-bounce delay-1500" style={{
+        animationDuration: '4s'
+      }}>
+          <svg width="20" height="28" viewBox="0 0 20 28" fill="currentColor">
+            <path d="M10 28C10 28 7 25 7 18C7 15 9 11 10 0C11 11 13 15 13 18C13 25 10 28 10 28Z" />
+          </svg>
+        </div>
+        <div className="absolute bottom-6 left-1/4 text-green-500/45 animate-pulse delay-3000">
+          <svg width="18" height="26" viewBox="0 0 18 26" fill="currentColor">
+            <path d="M9 26C9 26 6 23 6 17C6 14 8 10 9 0C10 10 12 14 12 17C12 23 9 26 9 26Z" />
+          </svg>
+        </div>
       </div>
 
       <div className="container mx-auto px-6 py-16 relative z-10">
