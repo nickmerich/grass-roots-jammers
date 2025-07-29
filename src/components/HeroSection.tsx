@@ -154,19 +154,19 @@ const HeroSection = () => {
             
             {/* Main headline */}
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl lg:text-7xl font-black text-emerald-900 mb-4 leading-[0.9] tracking-tight">
+              <h1 className="text-5xl lg:text-7xl font-black bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent mb-4 leading-[0.9] tracking-tight drop-shadow-lg">
                 Become a{" "}
-                <span className="block text-emerald-800 drop-shadow-lg">
+                <span className="block bg-gradient-to-br from-white via-white/90 to-white/70 bg-clip-text text-transparent drop-shadow-lg">
                   Founding Jammer
                 </span>
               </h1>
               
               {/* Subheadline */}
-              <p className="text-2xl lg:text-3xl text-emerald-800 font-bold mb-4">
+              <p className="text-2xl lg:text-3xl bg-gradient-to-br from-white to-white/85 bg-clip-text text-transparent font-bold mb-4 drop-shadow-lg">
                 Your #1 Bluegrass Jam Companion
               </p>
               
-              <p className="text-lg text-emerald-700 leading-relaxed max-w-2xl">Grass helps you master 200+ bluegrass standards, find jam sessions, and record your progress — all in one app.
+              <p className="text-lg bg-gradient-to-br from-white/95 to-white/80 bg-clip-text text-transparent leading-relaxed max-w-2xl drop-shadow-lg">Grass helps you master 200+ bluegrass standards, find jam sessions, and record your progress — all in one app.
 
 
             </p>
