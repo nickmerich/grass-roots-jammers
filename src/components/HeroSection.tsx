@@ -10,29 +10,16 @@ const HeroSection = () => {
       {/* Animated swirling lines and doodles */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Swirling musical lines */}
-        <svg className="absolute inset-0 w-full h-full" style={{ filter: 'drop-shadow(0 0 20px rgba(34, 197, 94, 0.3))' }}>
-          <path d="M 50 150 Q 200 100 350 200 Q 500 300 650 150" 
-                stroke="rgba(34, 197, 94, 0.4)" 
-                strokeWidth="3" 
-                fill="none" 
-                strokeDasharray="10,5"
-                className="animate-pulse">
+        <svg className="absolute inset-0 w-full h-full" style={{
+        filter: 'drop-shadow(0 0 20px rgba(34, 197, 94, 0.3))'
+      }}>
+          <path d="M 50 150 Q 200 100 350 200 Q 500 300 650 150" stroke="rgba(34, 197, 94, 0.4)" strokeWidth="3" fill="none" strokeDasharray="10,5" className="animate-pulse">
             <animate attributeName="stroke-dashoffset" values="0;-30;0" dur="6s" repeatCount="indefinite" />
           </path>
-          <path d="M 100 400 Q 300 350 500 450 Q 700 550 900 400" 
-                stroke="rgba(16, 185, 129, 0.4)" 
-                strokeWidth="2" 
-                fill="none" 
-                strokeDasharray="8,4"
-                className="animate-pulse delay-1000">
+          <path d="M 100 400 Q 300 350 500 450 Q 700 550 900 400" stroke="rgba(16, 185, 129, 0.4)" strokeWidth="2" fill="none" strokeDasharray="8,4" className="animate-pulse delay-1000">
             <animate attributeName="stroke-dashoffset" values="0;-24;0" dur="8s" repeatCount="indefinite" />
           </path>
-          <path d="M 200 250 Q 400 180 600 280 Q 800 380 1000 250" 
-                stroke="rgba(5, 150, 105, 0.3)" 
-                strokeWidth="2" 
-                fill="none" 
-                strokeDasharray="6,3"
-                className="animate-pulse delay-500">
+          <path d="M 200 250 Q 400 180 600 280 Q 800 380 1000 250" stroke="rgba(5, 150, 105, 0.3)" strokeWidth="2" fill="none" strokeDasharray="6,3" className="animate-pulse delay-500">
             <animate attributeName="stroke-dashoffset" values="0;-18;0" dur="10s" repeatCount="indefinite" />
           </path>
         </svg>
@@ -40,26 +27,30 @@ const HeroSection = () => {
         {/* Musical doodle decorations */}
         <div className="absolute top-16 left-16 text-emerald-400/60 animate-bounce delay-1000">
           <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
           </svg>
         </div>
         
-        <div className="absolute top-32 right-20 text-emerald-300/50 animate-spin" style={{ animationDuration: '20s' }}>
+        <div className="absolute top-32 right-20 text-emerald-300/50 animate-spin" style={{
+        animationDuration: '20s'
+      }}>
           <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
           </svg>
         </div>
 
         <div className="absolute bottom-20 left-32 text-green-400/40 animate-pulse delay-2000">
           <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7.53 12L9 10.5l1.4-1.41 2.07 2.08L17.6 6 19 7.41 12.47 14z"/>
+            <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7.53 12L9 10.5l1.4-1.41 2.07 2.08L17.6 6 19 7.41 12.47 14z" />
           </svg>
         </div>
 
         {/* Fun floating shapes */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-emerald-400/20 to-green-400/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-gradient-to-l from-green-300/30 to-emerald-300/30 rounded-full blur-2xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/3 right-1/3 w-32 h-32 bg-emerald-500/20 rounded-full blur-xl animate-bounce delay-500" style={{ animationDuration: '4s' }}></div>
+        <div className="absolute top-1/3 right-1/3 w-32 h-32 bg-emerald-500/20 rounded-full blur-xl animate-bounce delay-500" style={{
+        animationDuration: '4s'
+      }}></div>
       </div>
       
       {/* Enhanced floating musical elements */}
@@ -70,15 +61,23 @@ const HeroSection = () => {
         <div className="absolute top-60 left-1/4 animate-float-slow text-3xl opacity-60 filter drop-shadow-lg">🎵</div>
         <div className="absolute bottom-20 right-1/4 animate-float-medium text-4xl opacity-50 filter drop-shadow-lg">🎶</div>
         <div className="absolute top-80 right-10 animate-float-fast text-3xl opacity-60 filter drop-shadow-lg">♪</div>
-        <div className="absolute top-1/2 left-1/2 animate-spin text-2xl opacity-30 filter drop-shadow-lg transform -translate-x-1/2 -translate-y-1/2" style={{ animationDuration: '15s' }}>🎼</div>
-        <div className="absolute bottom-40 left-1/3 animate-bounce text-3xl opacity-40 filter drop-shadow-lg" style={{ animationDuration: '3s' }}>🎤</div>
+        <div className="absolute top-1/2 left-1/2 animate-spin text-2xl opacity-30 filter drop-shadow-lg transform -translate-x-1/2 -translate-y-1/2" style={{
+        animationDuration: '15s'
+      }}>🎼</div>
+        <div className="absolute bottom-40 left-1/3 animate-bounce text-3xl opacity-40 filter drop-shadow-lg" style={{
+        animationDuration: '3s'
+      }}>🎤</div>
         <div className="absolute top-96 right-1/3 animate-pulse text-2xl opacity-50 filter drop-shadow-lg">🎺</div>
         
         {/* Additional scattered musical symbols */}
         <div className="absolute top-24 left-1/3 text-emerald-400/70 text-xl animate-pulse delay-700">♫</div>
-        <div className="absolute bottom-60 right-20 text-green-400/60 text-lg animate-bounce delay-1500" style={{ animationDuration: '2.5s' }}>♬</div>
+        <div className="absolute bottom-60 right-20 text-green-400/60 text-lg animate-bounce delay-1500" style={{
+        animationDuration: '2.5s'
+      }}>♬</div>
         <div className="absolute top-48 right-1/4 text-emerald-300/80 text-2xl animate-pulse delay-300">♩</div>
-        <div className="absolute bottom-80 left-1/4 text-green-500/60 text-xl animate-bounce delay-2000" style={{ animationDuration: '4s' }}>♭</div>
+        <div className="absolute bottom-80 left-1/4 text-green-500/60 text-xl animate-bounce delay-2000" style={{
+        animationDuration: '4s'
+      }}>♭</div>
       </div>
 
       <div className="container mx-auto px-6 py-16 relative z-10">
@@ -189,22 +188,9 @@ const HeroSection = () => {
 
               {/* Event Details */}
               <div className="mb-4">
-                <h4 className="text-lg font-bold text-emerald-800 mb-3">What's new?</h4>
+                
               </div>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3 text-emerald-700">
-                  <Clock className="w-4 h-4" />
-                  <span className="font-semibold">Sharing to social media from in-app recordings</span>
-                </div>
-                <div className="flex items-center gap-3 text-emerald-700">
-                  <Music className="w-4 h-4" />
-                  <span className="font-semibold">Jam along with other users</span>
-                </div>
-                <div className="flex items-center gap-3 text-emerald-700">
-                  <Badge className="w-4 h-4 bg-transparent border-emerald-700 text-emerald-700" />
-                  <span className="font-semibold">Scrolling news feed of breaks from other players</span>
-                </div>
-              </div>
+              
             </Card>
           </div>
         </div>
