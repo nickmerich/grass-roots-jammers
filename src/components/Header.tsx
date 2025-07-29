@@ -26,7 +26,7 @@ const Header = () => {
               className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-2 rounded-lg transition-all hover:scale-105 shadow-lg"
               onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}
             >
-              🚀 Become a Founding Jammer
+              Get Started
             </Button>
           </div>
         </div>
