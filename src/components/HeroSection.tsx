@@ -103,7 +103,10 @@ const HeroSection = () => {
             <Card className="relative bg-gradient-to-br from-white to-emerald-50 p-8 rounded-3xl shadow-2xl border-0 max-w-md w-full transform hover:scale-105 transition-all duration-300 hover:shadow-3xl">
               {/* Card Header */}
               <div className="text-center mb-6">
-                <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm mb-4">
+                <div 
+                  className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm mb-4 cursor-pointer hover:bg-emerald-200 transition-colors"
+                  onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}
+                >
                   <Calendar className="w-4 h-4" />
                   Join Now
                 </div>
