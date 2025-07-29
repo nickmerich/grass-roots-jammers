@@ -1,13 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
-
 const TestimonialSection = () => {
-  return (
-    <section className="py-20 bg-gradient-to-br from-background to-secondary/30 relative overflow-hidden">
+  return <section className="py-20 bg-gradient-to-br from-background to-secondary/30 relative overflow-hidden">
       {/* Background musical elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="musical-instrument animate-float-slow top-20 right-20">🎤</div>
         <div className="musical-instrument animate-float-medium bottom-20 left-20">🎼</div>
-        <div className="musical-note animate-slide-musical top-1/2" style={{animationDelay: '2s'}}>♪</div>
+        <div className="musical-note animate-slide-musical top-1/2" style={{
+        animationDelay: '2s'
+      }}>♪</div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
@@ -23,17 +23,17 @@ const TestimonialSection = () => {
         <div className="max-w-3xl mx-auto">
           <Card className="bg-gradient-to-br from-card to-secondary/10 border-grass/20 shadow-lg btn-musical animate-bounce-in">
             <CardContent className="p-8 text-center">
-              <div className="text-4xl mb-6 animate-bounce-in" style={{animationDelay: '0.2s'}}>🎵</div>
-              <blockquote className="text-xl text-muted-foreground italic mb-6 leading-relaxed">
-                "I think the app is really good and it's been fun to utilize it and share with other folks."
-              </blockquote>
+              <div className="text-4xl mb-6 animate-bounce-in" style={{
+              animationDelay: '0.2s'
+            }}>🎵</div>
+              <blockquote className="text-xl text-muted-foreground italic mb-6 leading-relaxed">“A practical and inspiring tool, great for building confidence through structured practice.”</blockquote>
               <div className="flex items-center justify-center gap-4">
                 <div className="w-12 h-12 bg-grass rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg animate-pulse-glow">
                   B
                 </div>
                 <div className="text-left">
-                  <div className="font-semibold text-foreground">Brandon R.</div>
-                  <div className="text-sm text-muted-foreground">Longtime Jammer</div>
+                  <div className="font-semibold text-foreground">Cameron Olson</div>
+                  <div className="text-sm text-muted-foreground">Cameron Olson, Former Berklee College of Music Professor</div>
                 </div>
               </div>
             </CardContent>
@@ -51,8 +51,6 @@ const TestimonialSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TestimonialSection;
