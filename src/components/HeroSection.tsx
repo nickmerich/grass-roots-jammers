@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MapPin, Calendar, Clock, Music } from "lucide-react";
 const HeroSection = () => {
-  return <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-100 via-green-200 to-emerald-200 pt-20">
+  return <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-400 via-green-500 to-emerald-600 pt-20">
       {/* Fun doodle-style background */}
       <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 via-transparent to-emerald-300/30"></div>
       
@@ -80,31 +80,63 @@ const HeroSection = () => {
       }}>♭</div>
         
         {/* Grass elements */}
-        <div className="absolute bottom-16 left-16 animate-float-slow text-4xl opacity-50 filter drop-shadow-lg">🌱</div>
-        <div className="absolute bottom-32 right-32 animate-float-medium text-3xl opacity-60 filter drop-shadow-lg">🌿</div>
-        <div className="absolute bottom-20 left-1/2 animate-float-fast text-2xl opacity-40 filter drop-shadow-lg">🍃</div>
-        <div className="absolute bottom-40 right-16 animate-pulse text-3xl opacity-50 filter drop-shadow-lg delay-1000">🌾</div>
-        <div className="absolute bottom-12 left-1/3 animate-bounce text-2xl opacity-45 filter drop-shadow-lg delay-500" style={{
+        <div className="absolute bottom-16 left-16 animate-float-slow text-4xl opacity-60 filter drop-shadow-lg">🌱</div>
+        <div className="absolute bottom-32 right-32 animate-float-medium text-3xl opacity-70 filter drop-shadow-lg">🌿</div>
+        <div className="absolute bottom-20 left-1/2 animate-float-fast text-2xl opacity-50 filter drop-shadow-lg">🍃</div>
+        <div className="absolute bottom-40 right-16 animate-pulse text-3xl opacity-60 filter drop-shadow-lg delay-1000">🌾</div>
+        <div className="absolute bottom-12 left-1/3 animate-bounce text-2xl opacity-55 filter drop-shadow-lg delay-500" style={{
         animationDuration: '3.5s'
       }}>🌱</div>
-        <div className="absolute bottom-28 right-1/3 animate-float-slow text-3xl opacity-55 filter drop-shadow-lg delay-800">🌿</div>
+        <div className="absolute bottom-28 right-1/3 animate-float-slow text-3xl opacity-65 filter drop-shadow-lg delay-800">🌿</div>
+        
+        {/* Additional grass patches */}
+        <div className="absolute bottom-4 left-48 animate-pulse text-3xl opacity-50 filter drop-shadow-lg delay-600">🌱</div>
+        <div className="absolute bottom-8 right-48 animate-float-medium text-2xl opacity-60 filter drop-shadow-lg delay-1200">🌿</div>
+        <div className="absolute bottom-24 left-80 animate-bounce text-3xl opacity-45 filter drop-shadow-lg delay-1800" style={{
+        animationDuration: '4.5s'
+      }}>🌾</div>
+        <div className="absolute bottom-36 right-80 animate-float-slow text-2xl opacity-55 filter drop-shadow-lg delay-2400">🍃</div>
+        <div className="absolute bottom-44 left-20 animate-pulse text-4xl opacity-40 filter drop-shadow-lg delay-3600">🌱</div>
+        <div className="absolute bottom-52 right-20 animate-float-fast text-3xl opacity-50 filter drop-shadow-lg delay-4200">🌿</div>
+        <div className="absolute bottom-14 left-2/3 animate-bounce text-2xl opacity-45 filter drop-shadow-lg delay-4800" style={{
+        animationDuration: '3s'
+      }}>🌱</div>
         
         {/* Grass blade SVG elements */}
-        <div className="absolute bottom-8 left-8 text-green-400/40 animate-pulse delay-2000">
+        <div className="absolute bottom-8 left-8 text-green-300/60 animate-pulse delay-2000">
           <svg width="24" height="32" viewBox="0 0 24 32" fill="currentColor">
             <path d="M12 32C12 32 8 28 8 20C8 16 10 12 12 0C14 12 16 16 16 20C16 28 12 32 12 32Z" />
           </svg>
         </div>
-        <div className="absolute bottom-12 right-12 text-emerald-400/50 animate-bounce delay-1500" style={{
+        <div className="absolute bottom-12 right-12 text-emerald-300/70 animate-bounce delay-1500" style={{
         animationDuration: '4s'
       }}>
           <svg width="20" height="28" viewBox="0 0 20 28" fill="currentColor">
             <path d="M10 28C10 28 7 25 7 18C7 15 9 11 10 0C11 11 13 15 13 18C13 25 10 28 10 28Z" />
           </svg>
         </div>
-        <div className="absolute bottom-6 left-1/4 text-green-500/45 animate-pulse delay-3000">
+        <div className="absolute bottom-6 left-1/4 text-green-400/65 animate-pulse delay-3000">
           <svg width="18" height="26" viewBox="0 0 18 26" fill="currentColor">
             <path d="M9 26C9 26 6 23 6 17C6 14 8 10 9 0C10 10 12 14 12 17C12 23 9 26 9 26Z" />
+          </svg>
+        </div>
+        
+        {/* More grass blade SVG patches */}
+        <div className="absolute bottom-4 right-6 text-green-300/55 animate-pulse delay-4500">
+          <svg width="16" height="24" viewBox="0 0 16 24" fill="currentColor">
+            <path d="M8 24C8 24 5 21 5 15C5 12 7 8 8 0C9 8 11 12 11 15C11 21 8 24 8 24Z" />
+          </svg>
+        </div>
+        <div className="absolute bottom-10 left-60 text-emerald-400/60 animate-bounce delay-5000" style={{
+        animationDuration: '3.5s'
+      }}>
+          <svg width="22" height="30" viewBox="0 0 22 30" fill="currentColor">
+            <path d="M11 30C11 30 8 27 8 20C8 17 10 13 11 0C12 13 14 17 14 20C14 27 11 30 11 30Z" />
+          </svg>
+        </div>
+        <div className="absolute bottom-18 right-60 text-green-300/50 animate-pulse delay-5500">
+          <svg width="20" height="28" viewBox="0 0 20 28" fill="currentColor">
+            <path d="M10 28C10 28 7 25 7 18C7 15 9 11 10 0C11 11 13 15 13 18C13 25 10 28 10 28Z" />
           </svg>
         </div>
       </div>
