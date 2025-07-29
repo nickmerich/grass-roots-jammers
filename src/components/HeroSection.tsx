@@ -4,6 +4,19 @@ import { Card } from "@/components/ui/card";
 import { MapPin, Calendar, Clock, Music } from "lucide-react";
 const HeroSection = () => {
   return <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-200 to-green-300 pt-20">
+      {/* Textured Background Overlay */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/30 to-green-500/30"></div>
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 20% 50%, rgba(16, 185, 129, 0.3) 0%, transparent 50%), 
+                           radial-gradient(circle at 80% 20%, rgba(34, 197, 94, 0.3) 0%, transparent 50%), 
+                           radial-gradient(circle at 40% 80%, rgba(5, 150, 105, 0.2) 0%, transparent 50%)`
+        }}></div>
+        <div className="absolute inset-0" style={{
+          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.05) 2px, rgba(255,255,255,0.05) 4px)`
+        }}></div>
+      </div>
+      
       {/* Floating Musical Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 animate-float-slow text-4xl opacity-20">🎻</div>
