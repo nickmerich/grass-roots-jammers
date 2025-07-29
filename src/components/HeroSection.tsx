@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MapPin, Calendar, Clock, Music } from "lucide-react";
 const HeroSection = () => {
-  return <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-100 to-green-200 pt-20">
+  return <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-200 to-green-300 pt-20">
       {/* Floating Musical Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 animate-float-slow text-4xl opacity-20">🎻</div>
