@@ -10,7 +10,11 @@ const steps = [
   {
     number: "02",
     title: "Download & Sign In",
-    description: "Download the Grass app and sign in with your credentials."
+    description: "Download the Grass app and sign in with your credentials.",
+    downloadLinks: {
+      ios: "https://apps.apple.com/us/app/grass-jam-companion/id6741807679",
+      android: "https://play.google.com/store/apps/details?id=com.learngrass.grass&pcampaignid=web_share"
+    }
   },
   {
     number: "03",
@@ -71,6 +75,24 @@ const RequirementsSection = () => {
                   >
                     Join Slack Channel
                   </Button>
+                )}
+                {step.downloadLinks && (
+                  <div className="flex gap-2 flex-wrap">
+                    <Button 
+                      variant="outline-grass" 
+                      size="sm"
+                      onClick={() => window.open(step.downloadLinks.ios, '_blank')}
+                    >
+                      📱 App Store
+                    </Button>
+                    <Button 
+                      variant="outline-grass" 
+                      size="sm"
+                      onClick={() => window.open(step.downloadLinks.android, '_blank')}
+                    >
+                      🎮 Google Play
+                    </Button>
+                  </div>
                 )}
               </CardContent>
             </Card>
