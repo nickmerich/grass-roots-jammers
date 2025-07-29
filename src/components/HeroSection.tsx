@@ -60,6 +60,7 @@ const HeroSection = () => {
                 variant="outline" 
                 size="lg" 
                 className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-lg py-4 px-8 rounded-xl transition-all hover:scale-105"
+                onClick={() => window.location.href = 'mailto:nick@learngrass.com'}
               >
                 📩 Contact Us
               </Button>
