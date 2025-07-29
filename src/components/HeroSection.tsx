@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MapPin, Calendar, Clock, Music } from "lucide-react";
 const HeroSection = () => {
-  return <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-400 via-green-500 to-emerald-600 pt-20">
+  return <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-800 via-green-800 to-emerald-900 pt-20">
       {/* Fun doodle-style background */}
       <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 via-transparent to-emerald-300/30"></div>
       
