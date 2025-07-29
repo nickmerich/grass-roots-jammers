@@ -5,7 +5,7 @@ import { MapPin, Calendar, Clock, Music } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-50 to-green-100 pt-20">
+    <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-100 to-green-200 pt-20">
       {/* Floating Musical Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 animate-float-slow text-4xl opacity-20">🎻</div>
@@ -29,19 +29,19 @@ const HeroSection = () => {
             
             {/* Main headline */}
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl lg:text-7xl font-black text-emerald-800 mb-4 leading-[0.9] tracking-tight">
+              <h1 className="text-5xl lg:text-7xl font-black text-emerald-900 mb-4 leading-[0.9] tracking-tight">
                 Become a{" "}
-                <span className="block text-emerald-700 drop-shadow-lg">
+                <span className="block text-emerald-800 drop-shadow-lg">
                   Founding Jammer
                 </span>
               </h1>
               
               {/* Subheadline */}
-              <p className="text-2xl lg:text-3xl text-emerald-700 font-bold mb-4">
+              <p className="text-2xl lg:text-3xl text-emerald-800 font-bold mb-4">
                 Your #1 Bluegrass Jam Companion
               </p>
               
-              <p className="text-lg text-emerald-600 leading-relaxed max-w-2xl">
+              <p className="text-lg text-emerald-700 leading-relaxed max-w-2xl">
                 Shape the future of bluegrass jamming. Claim your spot, unlock exclusive recognition, 
                 and help grow a vibrant new community.
               </p>
