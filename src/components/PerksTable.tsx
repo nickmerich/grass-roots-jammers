@@ -1,32 +1,23 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
-const perks = [
-  {
-    perk: "Founding Badge",
-    description: "Special badge beside your username—forever!"
-  },
-  {
-    perk: "Launch Events",
-    description: "Invitation to exclusive live and virtual jams with other Founding Jammers"
-  },
-  {
-    perk: "Influence Roadmap",
-    description: "Direct ability to suggest/vote on new features and priorities"
-  },
-  {
-    perk: "Early Feature Access",
-    description: "Try out new tools and updates before anyone else"
-  },
-  {
-    perk: "Invite Codes",
-    description: "Bring up to 5 friends in with your personalized Founding Jammer invite link"
-  }
-];
-
+const perks = [{
+  perk: "Founding Badge",
+  description: "Special badge beside your username—forever!"
+}, {
+  perk: "Launch Events",
+  description: "Invitation to exclusive live and virtual jams with other Founding Jammers"
+}, {
+  perk: "Influence Roadmap",
+  description: "Direct ability to suggest/vote on new features and priorities"
+}, {
+  perk: "Early Feature Access",
+  description: "Try out new tools and updates before anyone else"
+}, {
+  perk: "Invite Codes",
+  description: "Bring up to 5 friends in with your personalized Founding Jammer invite link"
+}];
 const PerksTable = () => {
-  return (
-    <section className="py-20 bg-gradient-to-br from-background via-secondary/20 to-accent/10">
+  return <section className="py-20 bg-gradient-to-br from-background via-secondary/20 to-accent/10">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -35,9 +26,7 @@ const PerksTable = () => {
           <p className="text-xl text-muted-foreground mb-4 font-semibold">
             Founding Jammer Perks Table
           </p>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you get as a valued Founding Jammer member
-          </p>
+          
         </div>
         
         <Card className="max-w-4xl mx-auto bg-gradient-to-br from-card to-secondary/10 border-grass/20 shadow-lg">
@@ -54,19 +43,15 @@ const PerksTable = () => {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {perks.map((perk, index) => (
-                  <TableRow key={index} className="border-grass/10 hover:bg-secondary/30 transition-colors">
+                {perks.map((perk, index) => <TableRow key={index} className="border-grass/10 hover:bg-secondary/30 transition-colors">
                     <TableCell className="font-medium text-foreground">{perk.perk}</TableCell>
                     <TableCell className="text-muted-foreground">{perk.description}</TableCell>
-                  </TableRow>
-                ))}
+                  </TableRow>)}
               </TableBody>
             </Table>
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PerksTable;
