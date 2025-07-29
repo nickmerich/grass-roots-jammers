@@ -7,10 +7,12 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-lg">🌱</span>
-            </div>
-            <span className="text-2xl font-bold text-emerald-800">Grass</span>
+            <img 
+              src="/lovable-uploads/73282b36-17a5-4333-8811-d0366015177c.png" 
+              alt="Grass Logo"
+              className="w-12 h-12 rounded-xl shadow-lg"
+            />
+            <span className="text-3xl font-black text-emerald-800">Grass</span>
           </div>
 
           {/* Navigation Buttons */}
