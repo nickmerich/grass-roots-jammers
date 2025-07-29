@@ -21,10 +21,19 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-gradient-to-br from-secondary/30 to-background relative overflow-hidden">
+      {/* Background musical pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="musical-note animate-slide-musical top-1/4" style={{animationDelay: '1s'}}>♪</div>
+        <div className="musical-note animate-slide-musical top-1/2" style={{animationDelay: '3s'}}>♫</div>
+        <div className="musical-note animate-slide-musical top-3/4" style={{animationDelay: '5s'}}>♬</div>
+        <div className="musical-instrument animate-float-medium top-20 right-10">🎼</div>
+        <div className="musical-instrument animate-float-slow bottom-20 left-10">🎵</div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-bounce-in">
             Platform Features
           </h2>
           <p className="text-xl text-muted-foreground mb-4 font-semibold">
@@ -40,7 +49,8 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <Card 
               key={index} 
-              className="bg-gradient-to-br from-card to-accent/5 border-grass/20 hover:shadow-lg hover:shadow-grass/10 transition-all duration-300"
+              className="bg-gradient-to-br from-card to-accent/5 border-grass/20 hover:shadow-lg hover:shadow-grass/10 transition-all duration-300 btn-musical animate-bounce-in"
+              style={{animationDelay: `${index * 0.2}s`}}
             >
               <CardHeader>
                 <CardTitle className="text-xl text-foreground">{feature.title}</CardTitle>

@@ -56,6 +56,13 @@ All colors MUST be HSL.
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Musical animations */
+    --float-slow: 6s ease-in-out infinite;
+    --float-medium: 4s ease-in-out infinite;
+    --float-fast: 3s ease-in-out infinite;
+    --pulse-glow: 2s ease-in-out infinite;
+    --slide-musical: 15s linear infinite;
 
     --radius: 0.5rem;
 
@@ -122,5 +129,122 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Musical animation keyframes */
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+  
+  @keyframes float-medium {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(-3deg); }
+  }
+  
+  @keyframes float-fast {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--grass-accent) / 0.3); }
+    50% { box-shadow: 0 0 40px hsl(var(--grass-accent) / 0.6); }
+  }
+  
+  @keyframes slide-musical {
+    0% { transform: translateX(-100px); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(calc(100vw + 100px)); opacity: 0; }
+  }
+  
+  @keyframes bounce-in {
+    0% { transform: scale(0.3) rotate(-45deg); opacity: 0; }
+    50% { transform: scale(1.05) rotate(-10deg); }
+    70% { transform: scale(0.9) rotate(5deg); }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  /* Animation classes */
+  .animate-float-slow {
+    animation: float-slow var(--float-slow);
+  }
+  
+  .animate-float-medium {
+    animation: float-medium var(--float-medium);
+  }
+  
+  .animate-float-fast {
+    animation: float-fast var(--float-fast);
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow var(--pulse-glow);
+  }
+  
+  .animate-slide-musical {
+    animation: slide-musical var(--slide-musical);
+  }
+  
+  .animate-bounce-in {
+    animation: bounce-in 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, hsl(var(--grass-accent) / 0.3), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  
+  /* Musical note styles */
+  .musical-note {
+    position: absolute;
+    font-size: 1.5rem;
+    color: hsl(var(--grass-light) / 0.4);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .musical-instrument {
+    position: absolute;
+    font-size: 3rem;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  /* Enhanced button effects */
+  .btn-musical {
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-bounce);
+  }
+  
+  .btn-musical:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .btn-musical::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(var(--grass-light) / 0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .btn-musical:hover::before {
+    left: 100%;
   }
 }
