@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MapPin, Calendar, Clock, Music } from "lucide-react";
+
 const HeroSection = () => {
-  return <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-amber-900 to-orange-800 pt-20">
+  return (
+    <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-100 to-green-200 pt-20">
       {/* Floating Musical Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 animate-float-slow text-4xl opacity-20">🎻</div>
@@ -20,7 +22,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             {/* Limited spots badge */}
             <div className="flex justify-center lg:justify-start">
-              <Badge className="bg-gradient-to-r from-orange-500 to-amber-500 text-white hover:from-orange-600 hover:to-amber-600 text-sm font-bold px-6 py-3 border-0 shadow-lg animate-pulse">
+              <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white hover:from-red-600 hover:to-orange-600 text-sm font-bold px-6 py-3 border-0 shadow-lg animate-pulse">
                 🔥 Limited to First 100 Members Only
               </Badge>
             </div>
@@ -47,17 +49,30 @@ const HeroSection = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg py-4 px-8 rounded-xl shadow-xl transition-all hover:scale-105 hover:shadow-2xl" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
+              <Button 
+                size="lg"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg py-4 px-8 rounded-xl shadow-xl transition-all hover:scale-105 hover:shadow-2xl"
+                onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}
+              >
                 🚀 Become One of The First 100!
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-lg py-4 px-8 rounded-xl transition-all hover:scale-105" onClick={() => window.location.href = 'mailto:nick@learngrass.com'}>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-lg py-4 px-8 rounded-xl transition-all hover:scale-105"
+                onClick={() => window.location.href = 'mailto:nick@learngrass.com'}
+              >
                 📩 Contact Us
               </Button>
             </div>
             
             {/* App store badges */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="outline" className="h-16 px-6 bg-white/95 border border-gray-200 text-gray-800 hover:bg-gray-50 shadow-lg rounded-xl transition-all hover:scale-105" onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}>
+              <Button 
+                variant="outline" 
+                className="h-16 px-6 bg-white/95 border border-gray-200 text-gray-800 hover:bg-gray-50 shadow-lg rounded-xl transition-all hover:scale-105"
+                onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}
+              >
                 <div className="flex items-center gap-3">
                   <div className="text-2xl">📱</div>
                   <div className="text-left">
@@ -67,7 +82,11 @@ const HeroSection = () => {
                 </div>
               </Button>
               
-              <Button variant="outline" className="h-16 px-6 bg-white/95 border border-gray-200 text-gray-800 hover:bg-gray-50 shadow-lg rounded-xl transition-all hover:scale-105" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.learngrass.grass&pcampaignid=web_share', '_blank')}>
+              <Button 
+                variant="outline" 
+                className="h-16 px-6 bg-white/95 border border-gray-200 text-gray-800 hover:bg-gray-50 shadow-lg rounded-xl transition-all hover:scale-105"
+                onClick={() => window.open('https://play.google.com/store/apps/details?id=com.learngrass.grass&pcampaignid=web_share', '_blank')}
+              >
                 <div className="flex items-center gap-3">
                   <div className="text-2xl">🎮</div>
                   <div className="text-left">
@@ -84,7 +103,10 @@ const HeroSection = () => {
             <Card className="relative bg-gradient-to-br from-white to-emerald-50 p-8 rounded-3xl shadow-2xl border-0 max-w-md w-full transform hover:scale-105 transition-all duration-300 hover:shadow-3xl">
               {/* Card Header */}
               <div className="text-center mb-6">
-                <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm mb-4 cursor-pointer hover:bg-emerald-200 transition-colors" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
+                <div 
+                  className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm mb-4 cursor-pointer hover:bg-emerald-200 transition-colors"
+                  onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}
+                >
                   <Calendar className="w-4 h-4" />
                   Join Now
                 </div>
@@ -119,8 +141,20 @@ const HeroSection = () => {
 
               {/* Music Waveform Visual */}
               <div className="bg-emerald-50 rounded-2xl p-4 mb-6">
-                
-                
+                <div className="flex items-center justify-center gap-1 h-12">
+                  {[...Array(20)].map((_, i) => (
+                    <div
+                      key={i}
+                      className={`bg-emerald-500 rounded-full animate-pulse w-1 ${
+                        i % 3 === 0 ? 'h-8' : i % 2 === 0 ? 'h-6' : 'h-4'
+                      }`}
+                      style={{ animationDelay: `${i * 0.1}s` }}
+                    />
+                  ))}
+                </div>
+                <div className="text-center mt-2">
+                  <span className="text-xs text-emerald-600 font-medium">Live Jam Visualization</span>
+                </div>
               </div>
 
               {/* Event Details */}
@@ -142,6 +176,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
