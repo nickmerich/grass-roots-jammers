@@ -188,7 +188,7 @@ const HeroSection = () => {
                 </h3>
                 <div className="flex items-center justify-center gap-2 text-emerald-600">
                   <MapPin className="w-4 h-4" />
-                  <span className="font-semibold">Bluegrass Community</span>
+                  <span className="font-semibold cursor-pointer hover:text-emerald-700 transition-colors" onClick={() => window.open('https://join.slack.com/share/enQtOTI3MzAyNDMyNDUwMC01MGExOGZiMjcyMjVlZGU1NzQ5ZDhlMGNlYzU1NDRmYmI2OTg2ZTNlNzIzMTZjNjNiYWRiM2NlYWUxOGQwYzQz', '_blank')}>Bluegrass Community</span>
                 </div>
               </div>
 
