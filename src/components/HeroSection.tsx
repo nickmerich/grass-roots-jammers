@@ -161,15 +161,15 @@ const HeroSection = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-emerald-700">
                   <Clock className="w-4 h-4" />
-                  <span className="font-semibold">Lifetime Access</span>
+                  <span className="font-semibold">Sharing to social media from in-app recordings</span>
                 </div>
                 <div className="flex items-center gap-3 text-emerald-700">
                   <Music className="w-4 h-4" />
-                  <span className="font-semibold">Exclusive Community Features</span>
+                  <span className="font-semibold">Jam along with other users</span>
                 </div>
                 <div className="flex items-center gap-3 text-emerald-700">
                   <Badge className="w-4 h-4 bg-transparent border-emerald-700 text-emerald-700" />
-                  <span className="font-semibold">Founding Member Recognition</span>
+                  <span className="font-semibold">Scrolling news feed of breaks from other players</span>
                 </div>
               </div>
             </Card>
