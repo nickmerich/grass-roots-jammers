@@ -6,7 +6,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-lg">🌱</span>
+              <img src="/lovable-uploads/75e9d92f-f567-4158-bcb2-95cc367d5a04.png" alt="Grass" className="w-8 h-8" />
             </div>
             
           </div>
