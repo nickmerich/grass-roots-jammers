@@ -5,7 +5,8 @@ const steps = [
   {
     number: "01",
     title: "Fill Out Form",
-    description: "Sign up with the form below and download the app using the same email."
+    description: "Sign up with the form below and download the app using the same email.",
+    formLink: "https://tally.so/r/wv8RdQ"
   },
   {
     number: "02",
@@ -67,6 +68,15 @@ const RequirementsSection = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   {step.description}
                 </p>
+                {step.formLink && (
+                  <Button 
+                    variant="outline-grass" 
+                    size="sm"
+                    onClick={() => window.open(step.formLink, '_blank')}
+                  >
+                    📝 Fill Out Form
+                  </Button>
+                )}
                 {step.link && (
                   <Button 
                     variant="outline-grass" 
