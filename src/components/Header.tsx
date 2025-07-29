@@ -18,13 +18,7 @@ const Header = () => {
             <Button 
               variant="outline" 
               className="border border-emerald-300 text-emerald-700 hover:bg-emerald-50 font-medium px-6 py-2 rounded-lg transition-all"
-              onClick={() => {
-                // Scroll to app store buttons in hero section
-                const heroSection = document.querySelector('[data-section="hero"]');
-                if (heroSection) {
-                  heroSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              onClick={() => window.open('https://play.google.com/store/apps/details?id=com.learngrass.grass&pcampaignid=web_share', '_blank')}
             >
               📱 Download App
             </Button>
