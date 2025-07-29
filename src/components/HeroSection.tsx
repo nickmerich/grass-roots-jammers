@@ -121,6 +121,9 @@ const HeroSection = () => {
               
 
               {/* Event Details */}
+              <div className="mb-4">
+                <h4 className="text-lg font-bold text-emerald-800 mb-3">What's new?</h4>
+              </div>
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-emerald-700">
                   <Clock className="w-4 h-4" />
