@@ -5,7 +5,7 @@ import { MapPin, Calendar, Clock, Music } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-100 to-green-200 pt-20">
+    <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-amber-900 to-orange-800 pt-20">
       {/* Floating Musical Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 animate-float-slow text-4xl opacity-20">🎻</div>
@@ -22,7 +22,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             {/* Limited spots badge */}
             <div className="flex justify-center lg:justify-start">
-              <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white hover:from-red-600 hover:to-orange-600 text-sm font-bold px-6 py-3 border-0 shadow-lg animate-pulse">
+              <Badge className="bg-gradient-to-r from-orange-500 to-amber-500 text-white hover:from-orange-600 hover:to-amber-600 text-sm font-bold px-6 py-3 border-0 shadow-lg animate-pulse">
                 🔥 Limited to First 100 Members Only
               </Badge>
             </div>
