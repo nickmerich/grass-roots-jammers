@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -17,10 +18,10 @@ const CounterSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-bounce-in">
+          <h2 className="text-4xl md:text-5xl font-bold text-grass mb-6 animate-bounce-in">
             Join the Founding Jammers!
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-grass max-w-2xl mx-auto">
             Secure your spot in an exclusive community of bluegrass enthusiasts. 
             Limited to the first 100 members only.
           </p>
@@ -44,26 +45,26 @@ const CounterSection = () => {
             {/* Spots Remaining */}
             <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 text-center btn-musical animate-bounce-in" style={{animationDelay: '0.2s'}}>
               <CardHeader>
-                <div className="text-5xl font-bold text-grass-accent mb-2 animate-pulse-glow">98</div>
-                <Badge className="bg-accent/20 text-grass-accent hover:bg-accent/30 mx-auto">
+                <div className="text-5xl font-bold text-grass mb-2 animate-pulse-glow">98</div>
+                <Badge className="bg-accent/20 text-grass hover:bg-accent/30 mx-auto">
                   🎯 Spots Remaining
                 </Badge>
               </CardHeader>
               <CardContent>
-                <p className="text-sm font-semibold text-grass-accent">HURRY UP!</p>
+                <p className="text-sm font-semibold text-grass">HURRY UP!</p>
               </CardContent>
             </Card>
             
             {/* Percentage Filled */}
             <Card className="bg-gradient-to-br from-destructive/10 to-destructive/5 border-destructive/30 text-center btn-musical animate-bounce-in" style={{animationDelay: '0.3s'}}>
               <CardHeader>
-                <div className="text-5xl font-bold text-destructive mb-2 animate-pulse-glow">2%</div>
-                <Badge className="bg-destructive/20 text-destructive hover:bg-destructive/30 mx-auto">
+                <div className="text-5xl font-bold text-grass mb-2 animate-pulse-glow">2%</div>
+                <Badge className="bg-destructive/20 text-grass hover:bg-destructive/30 mx-auto">
                   🔥 Filled
                 </Badge>
               </CardHeader>
               <CardContent>
-                <p className="text-sm font-semibold text-destructive">LIMITED</p>
+                <p className="text-sm font-semibold text-grass">LIMITED</p>
               </CardContent>
             </Card>
           </div>
@@ -79,10 +80,10 @@ const CounterSection = () => {
               🚀 Become One of The First 100!
             </Button>
             
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-grass">
               <span className="font-semibold text-grass">2/100</span> have been claimed
             </p>
-            <p className="text-sm text-destructive font-semibold mt-1">
+            <p className="text-sm text-grass font-semibold mt-1">
               Don't miss your chance!
             </p>
           </div>
