@@ -8,72 +8,72 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 35 25% 8%;
-    --foreground: 35 15% 85%;
+    --background: 50 20% 98%;
+    --foreground: 120 40% 12%;
 
-    --card: 35 20% 12%;
-    --card-foreground: 35 15% 85%;
+    --card: 50 20% 100%;
+    --card-foreground: 120 40% 12%;
 
-    --popover: 35 20% 12%;
-    --popover-foreground: 35 15% 85%;
+    --popover: 50 20% 100%;
+    --popover-foreground: 120 40% 12%;
 
-    --primary: 25 75% 45%;
-    --primary-foreground: 35 25% 8%;
+    --primary: 120 85% 25%;
+    --primary-foreground: 50 20% 98%;
 
-    --secondary: 35 30% 18%;
-    --secondary-foreground: 35 15% 85%;
+    --secondary: 120 20% 92%;
+    --secondary-foreground: 120 40% 12%;
 
-    --muted: 35 25% 15%;
-    --muted-foreground: 35 10% 55%;
+    --muted: 120 15% 95%;
+    --muted-foreground: 120 20% 45%;
 
-    --accent: 35 85% 55%;
-    --accent-foreground: 35 25% 8%;
+    --accent: 85 85% 55%;
+    --accent-foreground: 120 40% 12%;
 
-    --destructive: 15 75% 50%;
-    --destructive-foreground: 35 15% 85%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 50 20% 98%;
 
-    --border: 35 20% 25%;
-    --input: 35 25% 20%;
-    --ring: 25 75% 45%;
+    --border: 120 20% 85%;
+    --input: 120 20% 90%;
+    --ring: 120 85% 25%;
 
-    /* Custom design tokens - Dark Sunset Theme */
-    --grass-green: 25 75% 45%;
-    --grass-light: 35 65% 55%;
-    --grass-accent: 35 85% 55%;
-    --nature-earth: 25 45% 20%;
-    --nature-warm: 35 35% 15%;
+    /* Custom design tokens */
+    --grass-green: 120 85% 25%;
+    --grass-light: 120 50% 45%;
+    --grass-accent: 85 85% 55%;
+    --nature-earth: 35 45% 15%;
+    --nature-warm: 50 20% 98%;
     
-    /* Gradients - Dark Sunset */
-    --gradient-primary: linear-gradient(135deg, hsl(25 75% 45%), hsl(35 65% 35%));
-    --gradient-hero: linear-gradient(135deg, hsl(25 75% 45%) 0%, hsl(35 65% 35%) 50%, hsl(35 85% 55%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(35 20% 15%), hsl(35 25% 12%));
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(120 85% 25%), hsl(120 70% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(120 85% 25%) 0%, hsl(120 70% 35%) 50%, hsl(85 85% 55%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(50 20% 100%), hsl(120 15% 98%));
     
-    /* Shadows - Dark Sunset */
-    --shadow-soft: 0 4px 20px hsl(25 75% 25% / 0.3);
-    --shadow-strong: 0 8px 32px hsl(25 75% 25% / 0.4);
-    --shadow-glow: 0 0 40px hsl(35 85% 55% / 0.4);
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(120 85% 25% / 0.1);
+    --shadow-strong: 0 8px 32px hsl(120 85% 25% / 0.15);
+    --shadow-glow: 0 0 40px hsl(85 85% 55% / 0.3);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-bouncy: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     
-    /* Musical animations */
-    --float-slow: 6s ease-in-out infinite;
-    --float-medium: 4s ease-in-out infinite;
-    --float-fast: 3s ease-in-out infinite;
-    --pulse-glow: 2s ease-in-out infinite;
-    --slide-musical: 15s linear infinite;
+    /* Musical elements */
+    --note-primary: hsl(120 85% 25%);
+    --note-secondary: hsl(85 85% 55%);
+    --note-accent: hsl(35 45% 15%);
+    --waveform-color: hsl(120 85% 25%);
+    --instrument-glow: hsl(85 85% 55% / 0.4);
 
     --radius: 0.5rem;
 
-    --sidebar-background: 35 25% 8%;
-    --sidebar-foreground: 35 15% 85%;
-    --sidebar-primary: 25 75% 45%;
-    --sidebar-primary-foreground: 35 25% 8%;
-    --sidebar-accent: 35 30% 18%;
-    --sidebar-accent-foreground: 35 15% 85%;
-    --sidebar-border: 35 20% 25%;
-    --sidebar-ring: 25 75% 45%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
