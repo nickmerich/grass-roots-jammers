@@ -178,10 +178,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-screen">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-24 lg:py-32 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 xl:gap-24 items-center min-h-screen">
           {/* Left Column - Content */}
-          <div className="space-y-6 sm:space-y-8">
+          <div className="space-y-8 sm:space-y-10 lg:space-y-12">
             {/* Limited spots badge */}
             <div className="flex justify-center lg:justify-start">
               <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white hover:from-red-600 hover:to-orange-600 text-xs sm:text-sm font-bold px-4 sm:px-6 py-2 sm:py-3 border-0 shadow-lg animate-pulse">
@@ -190,37 +190,36 @@ const HeroSection = () => {
             </div>
             
             {/* Main headline */}
-            <div className="text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent mb-4 leading-[0.9] tracking-tight drop-shadow-lg">
+            <div className="text-center lg:text-left space-y-6 lg:space-y-8">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent leading-[0.9] tracking-tight drop-shadow-lg">
                 Become a{" "}
-                <span className="block bg-gradient-to-br from-white via-white/90 to-white/70 bg-clip-text text-transparent drop-shadow-lg">
+                <span className="block bg-gradient-to-br from-white via-white/90 to-white/70 bg-clip-text text-transparent drop-shadow-lg mt-2 lg:mt-4">
                   Founding Jammer
                 </span>
               </h1>
               
               {/* Subheadline */}
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gradient-to-br from-white to-white/85 bg-clip-text text-transparent font-bold mb-4 drop-shadow-lg">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gradient-to-br from-white to-white/85 bg-clip-text text-transparent font-bold drop-shadow-lg">
                 Your #1 Beginner Bluegrass App
               </p>
               
-              <p className="text-base sm:text-lg bg-gradient-to-br from-white/95 to-white/80 bg-clip-text text-transparent leading-relaxed max-w-2xl drop-shadow-lg">Grass is the #1 app for learning and playing bluegrass music. Explore over 200 classic songs, join jam circles near you, track your progress, and connect with musicians from across the country. Whether you're just getting started or ready to lead a jam, Grass helps you grow your skills, your circle, and your confidence.
-
-
-            </p>
+              <p className="text-base sm:text-lg bg-gradient-to-br from-white/95 to-white/80 bg-clip-text text-transparent leading-relaxed max-w-2xl drop-shadow-lg">
+                Grass is the #1 app for learning and playing bluegrass music. Explore over 200 classic songs, join jam circles near you, track your progress, and connect with musicians from across the country. Whether you're just getting started or ready to lead a jam, Grass helps you grow your skills, your circle, and your confidence.
+              </p>
             </div>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base sm:text-lg py-3 sm:py-4 px-6 sm:px-8 rounded-xl shadow-xl transition-all hover:scale-105 hover:shadow-2xl" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
+              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base sm:text-lg py-4 sm:py-5 px-8 sm:px-10 rounded-xl shadow-xl transition-all hover:scale-105 hover:shadow-2xl" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
                 🚀 Become One of The First 100!
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-base sm:text-lg py-3 sm:py-4 px-6 sm:px-8 rounded-xl transition-all hover:scale-105" onClick={() => window.location.href = 'mailto:nick@learngrass.com'}>
+              <Button variant="outline" size="lg" className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-base sm:text-lg py-4 sm:py-5 px-8 sm:px-10 rounded-xl transition-all hover:scale-105" onClick={() => window.location.href = 'mailto:nick@learngrass.com'}>
                 📩 Contact Us
               </Button>
             </div>
             
             {/* App store badges */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start pt-4">
               <Button variant="outline" className="h-14 sm:h-16 px-4 sm:px-6 bg-white/95 border border-gray-200 text-gray-800 hover:bg-gray-50 shadow-lg rounded-xl transition-all hover:scale-105" onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}>
                 <div className="flex items-center gap-2 sm:gap-3">
                   <div className="text-xl sm:text-2xl">📱</div>
