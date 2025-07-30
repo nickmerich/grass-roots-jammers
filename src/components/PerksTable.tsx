@@ -20,9 +20,7 @@ const PerksTable = () => {
   return <section className="py-20 bg-gradient-to-br from-background via-secondary/20 to-accent/10">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Complete Benefits Overview
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Jammer Benefits Overview</h2>
           <p className="text-xl text-muted-foreground mb-4 font-semibold">
             Founding Jammer Perks Table
           </p>
