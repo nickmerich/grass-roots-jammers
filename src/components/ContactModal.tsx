@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
-import emailjs from '@emailjs/browser';
+import { supabase } from "@/integrations/supabase/client";
 
 interface ContactModalProps {
   trigger: React.ReactNode;
@@ -37,23 +37,19 @@ const ContactModal = ({ trigger }: ContactModalProps) => {
     setLoading(true);
 
     try {
-      // Initialize EmailJS (you'll need to set up your EmailJS account and get these values)
-      // For now, we'll simulate the email sending
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // In a real implementation, you would use:
-      // await emailjs.send(
-      //   'YOUR_SERVICE_ID',
-      //   'YOUR_TEMPLATE_ID',
-      //   {
-      //     from_name: formData.name,
-      //     from_email: formData.email,
-      //     subject: formData.subject,
-      //     message: formData.message,
-      //     to_email: 'join@learngrass.com'
-      //   },
-      //   'YOUR_PUBLIC_KEY'
-      // );
+      // Send email via Supabase edge function
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message
+        }
+      });
+
+      if (error) {
+        throw new Error(error.message);
+      }
 
       toast({
         title: "Message Sent!",
