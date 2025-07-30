@@ -14,9 +14,12 @@ const Header = () => {
 
           {/* Navigation Buttons */}
           <div className="flex items-center gap-4">
-            <Button variant="outline" className="border border-emerald-300 text-emerald-700 hover:bg-emerald-50 font-medium px-6 py-2 rounded-lg transition-all" onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}>
-              <img src={appStoreBadge} alt="Download on the App Store" className="h-6" />
-            </Button>
+            <img 
+              src={appStoreBadge} 
+              alt="Download on the App Store" 
+              className="h-10 cursor-pointer hover:scale-105 transition-transform" 
+              onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}
+            />
             <Button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-2 rounded-lg transition-all hover:scale-105 shadow-lg" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
               Get Started
             </Button>

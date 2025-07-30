@@ -61,12 +61,20 @@ const RequirementsSection = () => {
                     Join Slack Channel
                   </Button>}
                 {step.downloadLinks && <div className="flex gap-2 flex-wrap">
-                   <Button variant="outline-grass" size="sm" onClick={() => window.open(step.downloadLinks.ios, '_blank')}>
-                     <img src={appStoreBadge} alt="Download on the App Store" className="h-6" />
-                   </Button>
-                   <Button variant="outline-grass" size="sm" onClick={() => window.open(step.downloadLinks.android, '_blank')}>
-                     <img src={googlePlayBadge} alt="Get it on Google Play" className="h-6" />
-                   </Button>
+                 <div className="flex gap-2 flex-wrap">
+                   <img 
+                     src={appStoreBadge} 
+                     alt="Download on the App Store" 
+                     className="h-10 cursor-pointer hover:scale-105 transition-transform" 
+                     onClick={() => window.open(step.downloadLinks.ios, '_blank')}
+                   />
+                   <img 
+                     src={googlePlayBadge} 
+                     alt="Get it on Google Play" 
+                     className="h-10 cursor-pointer hover:scale-105 transition-transform" 
+                     onClick={() => window.open(step.downloadLinks.android, '_blank')}
+                   />
+                 </div>
                   </div>}
               </CardContent>
             </Card>)}
