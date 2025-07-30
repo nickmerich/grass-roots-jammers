@@ -106,7 +106,7 @@ const Footer = () => {
           <Button 
             variant="outline" 
             className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold px-8 py-3 rounded-xl transition-all hover:scale-105 shadow-lg"
-            onClick={() => window.location.href = 'mailto:nick@learngrass.com'}
+            onClick={() => window.location.href = 'mailto:join@learngrass.com'}
           >
             📩 Contact Us
           </Button>
@@ -134,7 +134,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="text-center text-emerald-600 text-sm font-medium bg-white/60 rounded-full px-6 py-3 mx-auto max-w-fit backdrop-blur-sm shadow-md">
-          © 2024 Learn Grass. Building the future of bluegrass music together.
+          © 2025 Learn Grass. Building the future of bluegrass music together.
         </div>
       </div>
     </footer>

@@ -209,7 +209,7 @@ const HeroSection = () => {
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm sm:text-base lg:text-lg py-5 sm:py-6 px-6 sm:px-8 lg:px-10 rounded-xl shadow-xl transition-all hover:scale-105 hover:shadow-2xl" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
                 ✅ Become One of The First 100!
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-sm sm:text-base lg:text-lg py-5 sm:py-6 px-6 sm:px-8 lg:px-10 rounded-xl transition-all hover:scale-105" onClick={() => window.location.href = 'mailto:nick@learngrass.com'}>
+              <Button variant="outline" size="lg" className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-sm sm:text-base lg:text-lg py-5 sm:py-6 px-6 sm:px-8 lg:px-10 rounded-xl transition-all hover:scale-105" onClick={() => window.location.href = 'mailto:join@learngrass.com'}>
                 📩 Contact Us
               </Button>
             </div>
