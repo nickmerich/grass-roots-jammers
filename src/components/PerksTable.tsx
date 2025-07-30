@@ -13,7 +13,7 @@ const perks = [{
   perk: "Early Feature Access",
   description: "Try out new tools and updates before anyone else"
 }, {
-  perk: "Referall + Invite Codes",
+  perk: "Grass BrandedFounding Jammer x Grass branded Popsite",
   description: "Bring up to 5 friends in with your personalized Founding Jammer invite link"
 }];
 const PerksTable = () => {
