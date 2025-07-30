@@ -60,7 +60,7 @@ const HeroSection = () => {
           {/* Reduce visual clutter on mobile - hide some elements */}
           <div className="hidden sm:block absolute top-20 left-2 sm:left-10 animate-float-slow text-4xl sm:text-6xl lg:text-8xl opacity-30 filter drop-shadow-lg">🎻</div>
           <div className="absolute top-40 right-4 sm:right-20 animate-float-medium text-2xl sm:text-5xl lg:text-7xl opacity-40 filter drop-shadow-lg">🪕</div>
-          <div className="hidden sm:block absolute bottom-32 left-4 sm:left-20 animate-float-fast text-4xl sm:text-6xl lg:text-8xl opacity-30 filter drop-shadow-lg">🎸</div>
+          <div className="hidden sm:block absolute bottom-32 left-4 sm:left-20 animate-float-fast text-4xl sm:text-6xl lg:text-8xl opacity-30 filter drop-shadow-lg">🪕</div>
           <div className="absolute top-60 left-1/4 animate-float-slow text-2xl sm:text-4xl lg:text-6xl opacity-50 filter drop-shadow-lg">🎵</div>
           <div className="absolute bottom-20 right-1/4 animate-float-medium text-2xl sm:text-5xl lg:text-7xl opacity-40 filter drop-shadow-lg">🎶</div>
           <div className="hidden sm:block absolute top-80 right-2 sm:right-10 animate-float-fast text-3xl sm:text-4xl lg:text-6xl opacity-50 filter drop-shadow-lg">♪</div>
@@ -69,7 +69,7 @@ const HeroSection = () => {
       }}>🎼</div>
           <div className="hidden sm:block absolute bottom-40 left-1/3 animate-bounce text-3xl sm:text-4xl lg:text-6xl opacity-30 filter drop-shadow-lg" style={{
         animationDuration: '3s'
-      }}>🎤</div>
+      }}>🎼</div>
           <div className="hidden lg:block absolute top-96 right-1/3 animate-pulse text-2xl sm:text-3xl lg:text-5xl opacity-40 filter drop-shadow-lg">🎺</div>
         
         {/* Additional scattered musical symbols - Reduced for mobile */}
@@ -258,7 +258,7 @@ const HeroSection = () => {
                   <div className="text-sm sm:text-base font-semibold text-emerald-800">Banjo</div>
                 </div>
                 <div className="bg-emerald-100 rounded-2xl p-5 sm:p-6 text-center hover:bg-emerald-200 transition-colors">
-                  <div className="text-3xl sm:text-4xl mb-3">🎸</div>
+                  <div className="text-3xl sm:text-4xl mb-3">🪕</div>
                   <div className="text-sm sm:text-base font-semibold text-emerald-800">Guitar</div>
                 </div>
                 <div className="bg-emerald-100 rounded-2xl p-5 sm:p-6 text-center hover:bg-emerald-200 transition-colors">

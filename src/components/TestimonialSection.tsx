@@ -3,7 +3,7 @@ const TestimonialSection = () => {
   return <section className="py-20 bg-gradient-to-br from-background to-secondary/30 relative overflow-hidden">
       {/* Background musical elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="musical-instrument animate-float-slow top-20 right-20">🎤</div>
+        <div className="musical-instrument animate-float-slow top-20 right-20">🎼</div>
         <div className="musical-instrument animate-float-medium bottom-20 left-20">🎼</div>
         <div className="musical-note animate-slide-musical top-1/2" style={{
         animationDelay: '2s'
@@ -44,7 +44,7 @@ const TestimonialSection = () => {
               <CardContent className="p-8 text-center">
                 <div className="text-4xl mb-6 animate-bounce-in" style={{
                 animationDelay: '0.4s'
-              }}>🎸</div>
+              }}>🪕</div>
                 <blockquote className="text-xl text-muted-foreground italic mb-6 leading-relaxed">"This App reconnected me with my bluegrass roots. I haven't enjoyed playing this much in years."</blockquote>
                 <div className="flex items-center justify-center gap-4">
                   <div className="w-12 h-12 bg-grass rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg animate-pulse-glow">

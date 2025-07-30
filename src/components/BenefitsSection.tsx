@@ -24,7 +24,7 @@ const BenefitsSection = () => {
   return <section className="py-20 bg-gradient-to-br from-background to-secondary/30 relative overflow-hidden">
       {/* Background musical elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="musical-instrument animate-float-slow top-20 left-10">🎸</div>
+        <div className="musical-instrument animate-float-slow top-20 left-10">🪕</div>
         <div className="musical-instrument animate-float-medium top-40 right-20">🪕</div>
         <div className="musical-instrument animate-float-fast bottom-40 left-1/4">🎻</div>
         <div className="musical-note animate-slide-musical top-1/3" style={{

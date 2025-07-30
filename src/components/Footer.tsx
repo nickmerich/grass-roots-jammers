@@ -55,7 +55,7 @@ const Footer = () => {
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 left-10 animate-float-slow text-2xl opacity-20">🎻</div>
         <div className="absolute top-20 right-20 animate-float-medium text-2xl opacity-20">🪕</div>
-        <div className="absolute bottom-16 left-20 animate-float-fast text-2xl opacity-20">🎸</div>
+        <div className="absolute bottom-16 left-20 animate-float-fast text-2xl opacity-20">🪕</div>
         <div className="absolute top-32 right-1/4 animate-float-slow text-xl opacity-20">🎵</div>
         <div className="absolute bottom-8 right-10 animate-float-medium text-xl opacity-20">♪</div>
       </div>
