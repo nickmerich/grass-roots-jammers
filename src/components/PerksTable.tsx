@@ -13,7 +13,7 @@ const perks = [{
   perk: "Early Feature Access",
   description: "Try out new tools and updates before anyone else"
 }, {
-  perk: "Invite Codes",
+  perk: "Referall + Invite Codes",
   description: "Bring up to 5 friends in with your personalized Founding Jammer invite link"
 }];
 const PerksTable = () => {
