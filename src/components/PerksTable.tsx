@@ -28,7 +28,7 @@ const PerksTable = () => {
         <Card className="max-w-4xl mx-auto bg-gradient-to-br from-card to-secondary/10 border-grass/20 shadow-lg">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl text-grass">Exclusive Perks & Privileges</CardTitle>
-            <CardDescription>Exclusive perks and privileges for life</CardDescription>
+            
           </CardHeader>
           <CardContent>
             <Table>
