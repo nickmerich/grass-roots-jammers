@@ -51,8 +51,8 @@ const TestimonialSection = () => {
                     A
                   </div>
                   <div className="text-left">
-                    <div className="font-semibold text-foreground">Anonymous User</div>
-                    <div className="text-sm text-muted-foreground">Community Member</div>
+                    <div className="font-semibold text-foreground">Faith Manning</div>
+                    <div className="text-sm text-muted-foreground">Musician // Berklee College of Music Student</div>
                   </div>
                 </div>
               </CardContent>
