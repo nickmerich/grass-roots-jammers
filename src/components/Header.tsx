@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Smartphone } from "lucide-react";
+import appStoreBadge from "@/assets/app-store-badge.svg";
 const Header = () => {
   return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-6 py-4">
@@ -15,8 +15,7 @@ const Header = () => {
           {/* Navigation Buttons */}
           <div className="flex items-center gap-4">
             <Button variant="outline" className="border border-emerald-300 text-emerald-700 hover:bg-emerald-50 font-medium px-6 py-2 rounded-lg transition-all" onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}>
-              <Smartphone className="w-4 h-4 mr-2" />
-              Download App
+              <img src={appStoreBadge} alt="Download on the App Store" className="h-6" />
             </Button>
             <Button className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-2 rounded-lg transition-all hover:scale-105 shadow-lg" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
               Get Started

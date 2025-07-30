@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Smartphone, Gamepad2 } from "lucide-react";
+import appStoreBadge from "@/assets/app-store-badge.svg";
+import googlePlayBadge from "@/assets/google-play-badge.png";
 const steps = [{
   number: "01",
   title: "Fill Out Form",
@@ -61,12 +62,10 @@ const RequirementsSection = () => {
                   </Button>}
                 {step.downloadLinks && <div className="flex gap-2 flex-wrap">
                    <Button variant="outline-grass" size="sm" onClick={() => window.open(step.downloadLinks.ios, '_blank')}>
-                     <Smartphone className="w-4 h-4 mr-1" />
-                     App Store
+                     <img src={appStoreBadge} alt="Download on the App Store" className="h-6" />
                    </Button>
                    <Button variant="outline-grass" size="sm" onClick={() => window.open(step.downloadLinks.android, '_blank')}>
-                     <Gamepad2 className="w-4 h-4 mr-1" />
-                     Google Play
+                     <img src={googlePlayBadge} alt="Get it on Google Play" className="h-6" />
                    </Button>
                   </div>}
               </CardContent>
