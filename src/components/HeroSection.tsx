@@ -191,9 +191,7 @@ const HeroSection = () => {
             
             {/* Main headline */}
             <div className="text-center lg:text-left space-y-6 lg:space-y-8">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent leading-[0.9] tracking-tight drop-shadow-lg">
-                FOUNDING JAMMERS AMBASSADORSS
-              </h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent leading-[0.9] tracking-tight drop-shadow-lg">FOUNDING JAMMERS AMBASSADORS</h1>
               
               {/* Subheadline */}
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gradient-to-br from-white to-white/85 bg-clip-text text-transparent font-bold drop-shadow-lg">
