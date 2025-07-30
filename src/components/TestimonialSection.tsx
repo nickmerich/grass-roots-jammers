@@ -33,7 +33,7 @@ const TestimonialSection = () => {
                 </div>
                 <div className="text-left">
                   <div className="font-semibold text-foreground">Cameron Olson</div>
-                  <div className="text-sm text-muted-foreground">Cameron Olson, Former Berklee College of Music Professor</div>
+                  <div className="text-sm text-muted-foreground">Engineer Lead @ VCL Audio // Former Berklee College of Music Professor</div>
                 </div>
               </div>
             </CardContent>
