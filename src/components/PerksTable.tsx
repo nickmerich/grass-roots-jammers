@@ -14,7 +14,7 @@ const perks = [{
   description: "Try out new tools and updates before anyone else"
 }, {
   perk: "Grass Branded Popsite",
-  description: "Bring up to 5 friends in with your personalized Founding Jammer invite link"
+  description: "One Year Free tier for Founding Jammers only.. You will receive a Grass x Founding Jammer branded website!"
 }];
 const PerksTable = () => {
   return <section className="py-20 bg-gradient-to-br from-background via-secondary/20 to-accent/10">
