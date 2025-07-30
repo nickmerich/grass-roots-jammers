@@ -214,21 +214,21 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            {/* App store badges */}
-            <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center pt-6">
-              <div className="h-14 sm:h-16 flex items-center">
+            {/* App store badges - Mobile optimized and centered */}
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center pt-6">
+              <div className="h-12 sm:h-14 lg:h-16 flex items-center justify-center w-full sm:w-auto max-w-[200px] sm:max-w-none">
                 <img 
                   src={appStoreBadge} 
                   alt="Download on the App Store" 
-                  className="h-full w-auto cursor-pointer hover:scale-105 transition-transform" 
+                  className="h-full w-auto cursor-pointer hover:scale-105 transition-all duration-300 drop-shadow-lg" 
                   onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}
                 />
               </div>
-              <div className="h-14 sm:h-16 flex items-center">
+              <div className="h-12 sm:h-14 lg:h-16 flex items-center justify-center w-full sm:w-auto max-w-[200px] sm:max-w-none">
                 <img 
                   src={googlePlayBadge} 
                   alt="Get it on Google Play" 
-                  className="h-full w-auto cursor-pointer hover:scale-105 transition-transform" 
+                  className="h-full w-auto cursor-pointer hover:scale-105 transition-all duration-300 drop-shadow-lg" 
                   onClick={() => window.open('https://play.google.com/store/apps/details?id=com.learngrass.grass&pcampaignid=web_share', '_blank')}
                 />
               </div>
