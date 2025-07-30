@@ -65,13 +65,15 @@ const RequirementsSection = () => {
                    <img 
                      src={appStoreBadge} 
                      alt="Download on the App Store" 
-                     className="h-10 cursor-pointer hover:scale-105 transition-transform" 
+                     className="h-10 w-auto cursor-pointer hover:scale-105 transition-transform" 
+                     style={{ maxWidth: '135px' }}
                      onClick={() => window.open(step.downloadLinks.ios, '_blank')}
                    />
                    <img 
                      src={googlePlayBadge} 
                      alt="Get it on Google Play" 
-                     className="h-10 cursor-pointer hover:scale-105 transition-transform" 
+                     className="h-10 w-auto cursor-pointer hover:scale-105 transition-transform" 
+                     style={{ maxWidth: '135px' }}
                      onClick={() => window.open(step.downloadLinks.android, '_blank')}
                    />
                  </div>
