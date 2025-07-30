@@ -70,14 +70,14 @@ const RequirementsSection = () => {
                        onClick={() => window.open(step.downloadLinks.ios, '_blank')}
                      />
                    </div>
-                   <div className="h-10 flex items-center">
-                     <img 
-                       src={googlePlayBadge} 
-                       alt="Get it on Google Play" 
-                       className="h-full w-auto cursor-pointer hover:scale-105 transition-transform" 
-                       onClick={() => window.open(step.downloadLinks.android, '_blank')}
-                     />
-                   </div>
+                    <div className="h-12 flex items-center">
+                      <img 
+                        src={googlePlayBadge} 
+                        alt="Get it on Google Play" 
+                        className="h-full w-auto cursor-pointer hover:scale-105 transition-transform" 
+                        onClick={() => window.open(step.downloadLinks.android, '_blank')}
+                      />
+                    </div>
                  </div>
                   </div>}
               </CardContent>
