@@ -21,28 +21,28 @@ const faqs = [
     answer: "Once we hit 100, we'll close this tier and begin our public launch campaign. Founding Members will retain their exclusive perks forever."
   },
   {
-    question: "Do I need to know how to play bluegrass?",
+    question: "Do I need to be a professional musician?",
     answer: "Not at all! We're built for beginners and pros alike. If you're curious about bluegrass, you're in the right place."
   },
   {
-    question: "What makes LearnGrass different from other music apps?",
-    answer: "LearnGrass honors the authentic bluegrass learning tradition while making it accessible to modern learners. We combine community-based learning with interactive tools, resulting in 67% retention at 90 days compared to the industry average of 2%."
+    question: "What makes Grass different from other music apps?",
+    answer: "Grass focuses on the authentic bluegrass experience of learning and playing music socially at jams, while pulling the tradition into a modern app."
   },
   {
     question: "How does the app help beginners who've never played bluegrass?",
-    answer: "We start where bluegrass does: with listening and repetition. The app walks you from basic chord progressions to real soloing, helping beginners feel welcome and capable."
+    answer: "We start where bluegrass does: simple chords, lyrics, and listening to other musicians and learning by ear. We want beginners to feel welcome and capable."
   },
   {
     question: "Can advanced players benefit from the app?",
-    answer: "Absolutely. Advanced users discover rare songs, track progress, and mentor newer players. Even master musicians keep learning—and LearnGrass supports that."
+    answer: "Absolutely. Advanced users discover rare songs, track progress, and mentor newer players. Every musician is on some point on the same journey."
   },
   {
     question: "Is the app suitable for different instruments?",
-    answer: "Yes! We support guitar, banjo, mandolin, fiddle, bass, dobro, and vocals—each with a tailored path."
+    answer: "Yes! Grass is not for any one instrument but is accessible to everyone, including singers and instrumentalists."
   },
   {
-    question: "How does LearnGrass support live jam participation?",
-    answer: "You'll be prepared with chord charts, lyrics, etiquette guides, and a \"Near Me\" jam finder to show up ready."
+    question: "How does Grass support live jam participation?",
+    answer: "You'll be prepared with chord charts, lyrics, demo videos from other musicians, and a \"Near Me\" jam finder to get to the right place."
   }
 ];
 
@@ -101,7 +101,7 @@ const Footer = () => {
             Still have questions?
           </h3>
           <p className="text-lg text-emerald-700 mb-6 max-w-2xl mx-auto">
-            We're here to help you make the right decision for your bluegrass journey.
+            We're excited for you to be part of the Grass community.
           </p>
           <Button 
             variant="outline" 

@@ -2,16 +2,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { List, Mic, MapPin, Video, TrendingUp, Music } from "lucide-react";
 
 const features = [{
-  title: "Jam Set Generator",
+  title: "Jam Setlist Tracker",
   description: "Plan the perfect setlist for your next porch session or local jam.",
   icon: List
 }, {
   title: "Multi-Track Recordings",
-  description: "Practice Lead, Rhythm, or Solo parts — filtered just for you.",
+  description: "Practice lead, rhythm, or vocal parts - alone or jam along with other musicians.",
   icon: Mic
 }, {
   title: "Find Jammers Near You",
-  description: "Discover active jam circles near your city or zip.",
+  description: "Discover active weekly or monthly jams near your home or wherever you travel.",
   icon: MapPin
 }, {
   title: "Upload Clips & Join Challenges",
@@ -48,7 +48,7 @@ const FeaturesSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-bounce-in">Why Musicians Choose Grass</h2>
           
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to become a confident bluegrass jammer, all in one beautifully designed app.
+            Everything you need to become a confident bluegrass jammer, all in one place.
           </p>
         </div>
         

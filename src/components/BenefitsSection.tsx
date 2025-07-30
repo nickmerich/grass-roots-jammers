@@ -10,11 +10,11 @@ const benefits = [{
 }, {
   icon: "🎯",
   title: "Community Impact",
-  description: "Directly influence product roadmap, event schedules, and future releases."
+  description: "Join private Slack channel to influence product roadmap and future releases."
 }, {
   icon: "🎉",
   title: "Exclusive Events",
-  description: "Get priority invites to launch jams and exclusive online sessions."
+  description: "Get priority invites to exclusive online sessions and upcoming events."
 }, {
   icon: "🤝",
   title: "Invite Your Crew",
