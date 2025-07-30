@@ -195,7 +195,7 @@ const HeroSection = () => {
               
               {/* Subheadline */}
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gradient-to-br from-white to-white/85 bg-clip-text text-transparent font-bold drop-shadow-lg">
-                Jam Companion for Aspiring Bluegrass Musicians
+                Go-to Jam Companion
               </p>
               
               <p className="text-base sm:text-lg bg-gradient-to-br from-white/95 to-white/80 bg-clip-text text-transparent leading-relaxed max-w-2xl drop-shadow-lg">
