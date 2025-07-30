@@ -182,30 +182,30 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-8 lg:px-12 py-20 sm:py-24 lg:py-32 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 xl:gap-24 items-center min-h-screen">
-          {/* Left Column - Content */}
-          <div className="space-y-10 sm:space-y-12 lg:space-y-14">
+        <div className="flex justify-center items-center min-h-screen">
+          {/* Content */}
+          <div className="space-y-10 sm:space-y-12 lg:space-y-14 max-w-4xl">
             {/* Limited spots badge */}
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center">
               <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white hover:from-red-600 hover:to-orange-600 text-xs sm:text-sm font-bold px-4 sm:px-6 py-2 sm:py-3 border-0 shadow-lg animate-pulse">
                 🔥 Limited to First 100 Members Only
               </Badge>
             </div>
             
             {/* Main headline */}
-            <div className="text-center lg:text-left space-y-8 lg:space-y-10">
+            <div className="text-center space-y-8 lg:space-y-10">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-black bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent leading-tight tracking-tight drop-shadow-lg">Become a Founding Jammer</h1>
               
               {/* Subheadline */}
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl bg-gradient-to-br from-white to-white/85 bg-clip-text text-transparent font-bold drop-shadow-lg">Your Go-To Bluegrass Jam Companion</p>
               
-              <p className="text-sm sm:text-base lg:text-lg bg-gradient-to-br from-white/95 to-white/80 bg-clip-text text-transparent leading-relaxed max-w-2xl drop-shadow-lg">
+              <p className="text-sm sm:text-base lg:text-lg bg-gradient-to-br from-white/95 to-white/80 bg-clip-text text-transparent leading-relaxed max-w-2xl drop-shadow-lg mx-auto">
                 Grass is the #1 app for learning and playing bluegrass. Access 200+ classic songs, join local jam circles, track your progress, and connect with musicians nationwide. Whether you're just starting out or leading your own jam, Grass helps you grow your skills, your circle, and your confidence.
               </p>
             </div>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm sm:text-base lg:text-lg py-5 sm:py-6 px-6 sm:px-8 lg:px-10 rounded-xl shadow-xl transition-all hover:scale-105 hover:shadow-2xl" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
                 ✅ Become One of The First 100!
               </Button>
@@ -215,7 +215,7 @@ const HeroSection = () => {
             </div>
             
             {/* App store badges */}
-            <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center lg:justify-start pt-6">
+            <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center pt-6">
               <div className="h-14 sm:h-16 flex items-center">
                 <img 
                   src={appStoreBadge} 
@@ -233,44 +233,6 @@ const HeroSection = () => {
                 />
               </div>
             </div>
-          </div>
-
-          {/* Right Column - Illustrated Card */}
-          <div className="flex justify-center lg:justify-end mt-12 lg:mt-0">
-            <Card className="relative bg-gradient-to-br from-white to-emerald-50 p-8 sm:p-10 rounded-3xl shadow-2xl border-0 max-w-lg w-full transform hover:scale-105 transition-all duration-300 hover:shadow-3xl">
-              {/* Card Header */}
-              <div className="text-center mb-8 sm:mb-10">
-                <div className="inline-flex items-center gap-3 bg-emerald-100 text-emerald-800 px-5 sm:px-6 py-3 sm:py-4 rounded-full font-bold text-sm sm:text-base mb-5 sm:mb-6 cursor-pointer hover:bg-emerald-200 transition-colors" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
-                  <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
-                  Join Now
-                </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-emerald-800 mb-4 leading-tight">Join a Founding Jammer Session</h3>
-                <div className="flex items-center justify-center gap-3 text-emerald-600">
-                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span className="font-semibold text-sm sm:text-base cursor-pointer hover:text-emerald-700 transition-colors" onClick={() => window.open('https://join.slack.com/share/enQtOTI3MzAyNDMyNDUwMC01MGExOGZiMjcyMjVlZGU1NzQ5ZDhlMGNlYzU1NDRmYmI2OTg2ZTNlNzIzMTZjNjNiYWRiM2NlYWUxOGQwYzQz', '_blank')}>Bluegrass Community</span>
-                </div>
-              </div>
-
-              {/* Instrument Icons Grid */}
-              <div className="grid grid-cols-2 gap-4 sm:gap-5">
-                <div className="bg-emerald-100 rounded-2xl p-5 sm:p-6 text-center hover:bg-emerald-200 transition-colors">
-                  <div className="text-3xl sm:text-4xl mb-3">🪕</div>
-                  <div className="text-sm sm:text-base font-semibold text-emerald-800">Banjo</div>
-                </div>
-                <div className="bg-emerald-100 rounded-2xl p-5 sm:p-6 text-center hover:bg-emerald-200 transition-colors">
-                  <div className="text-3xl sm:text-4xl mb-3">🎸</div>
-                  <div className="text-sm sm:text-base font-semibold text-emerald-800">Guitar</div>
-                </div>
-                <div className="bg-emerald-100 rounded-2xl p-5 sm:p-6 text-center hover:bg-emerald-200 transition-colors">
-                  <div className="text-3xl sm:text-4xl mb-3">🎻</div>
-                  <div className="text-sm sm:text-base font-semibold text-emerald-800">Fiddle</div>
-                </div>
-                <div className="bg-emerald-100 rounded-2xl p-5 sm:p-6 text-center hover:bg-emerald-200 transition-colors">
-                  <div className="text-3xl sm:text-4xl mb-3">🎭</div>
-                  <div className="text-sm sm:text-base font-semibold text-emerald-800">Mandolin</div>
-                </div>
-              </div>
-            </Card>
           </div>
         </div>
       </div>
