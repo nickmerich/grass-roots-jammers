@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 const Header = () => {
-  return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-emerald-200 shadow-sm">
+  return <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-6 py-4 border border-green-800">
         <div className="flex items-center justify-between">
           {/* Logo */}
