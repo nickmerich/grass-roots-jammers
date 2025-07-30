@@ -200,7 +200,7 @@ const HeroSection = () => {
               
               {/* Subheadline */}
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gradient-to-br from-white to-white/85 bg-clip-text text-transparent font-bold mb-4 drop-shadow-lg">
-                Learn, Jam, Grow.
+                Your #1 Beginner Bluegrass App
               </p>
               
               <p className="text-base sm:text-lg bg-gradient-to-br from-white/95 to-white/80 bg-clip-text text-transparent leading-relaxed max-w-2xl drop-shadow-lg">Grass is the #1 app for learning and playing bluegrass music. Explore over 200 classic songs, join jam circles near you, track your progress, and connect with musicians from across the country. Whether you're just getting started or ready to lead a jam, Grass helps you grow your skills, your circle, and your confidence.
