@@ -62,20 +62,22 @@ const RequirementsSection = () => {
                   </Button>}
                 {step.downloadLinks && <div className="flex gap-2 flex-wrap">
                  <div className="flex gap-2 flex-wrap">
-                   <img 
-                     src={appStoreBadge} 
-                     alt="Download on the App Store" 
-                     className="h-10 w-auto cursor-pointer hover:scale-105 transition-transform" 
-                     style={{ maxWidth: '135px' }}
-                     onClick={() => window.open(step.downloadLinks.ios, '_blank')}
-                   />
-                   <img 
-                     src={googlePlayBadge} 
-                     alt="Get it on Google Play" 
-                     className="h-10 w-auto cursor-pointer hover:scale-105 transition-transform" 
-                     style={{ maxWidth: '135px' }}
-                     onClick={() => window.open(step.downloadLinks.android, '_blank')}
-                   />
+                   <div className="h-10 flex items-center">
+                     <img 
+                       src={appStoreBadge} 
+                       alt="Download on the App Store" 
+                       className="h-full w-auto cursor-pointer hover:scale-105 transition-transform" 
+                       onClick={() => window.open(step.downloadLinks.ios, '_blank')}
+                     />
+                   </div>
+                   <div className="h-10 flex items-center">
+                     <img 
+                       src={googlePlayBadge} 
+                       alt="Get it on Google Play" 
+                       className="h-full w-auto cursor-pointer hover:scale-105 transition-transform" 
+                       onClick={() => window.open(step.downloadLinks.android, '_blank')}
+                     />
+                   </div>
                  </div>
                   </div>}
               </CardContent>

@@ -216,20 +216,22 @@ const HeroSection = () => {
             
             {/* App store badges */}
             <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center lg:justify-start pt-6">
-              <img 
-                src={appStoreBadge} 
-                alt="Download on the App Store" 
-                className="h-14 sm:h-16 w-auto cursor-pointer hover:scale-105 transition-transform" 
-                style={{ maxWidth: '180px' }}
-                onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}
-              />
-              <img 
-                src={googlePlayBadge} 
-                alt="Get it on Google Play" 
-                className="h-14 sm:h-16 w-auto cursor-pointer hover:scale-105 transition-transform" 
-                style={{ maxWidth: '180px' }}
-                onClick={() => window.open('https://play.google.com/store/apps/details?id=com.learngrass.grass&pcampaignid=web_share', '_blank')}
-              />
+              <div className="h-14 sm:h-16 flex items-center">
+                <img 
+                  src={appStoreBadge} 
+                  alt="Download on the App Store" 
+                  className="h-full w-auto cursor-pointer hover:scale-105 transition-transform" 
+                  onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}
+                />
+              </div>
+              <div className="h-14 sm:h-16 flex items-center">
+                <img 
+                  src={googlePlayBadge} 
+                  alt="Get it on Google Play" 
+                  className="h-full w-auto cursor-pointer hover:scale-105 transition-transform" 
+                  onClick={() => window.open('https://play.google.com/store/apps/details?id=com.learngrass.grass&pcampaignid=web_share', '_blank')}
+                />
+              </div>
             </div>
           </div>
 
