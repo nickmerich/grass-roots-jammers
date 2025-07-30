@@ -20,16 +20,14 @@ const PerksTable = () => {
   return <section className="py-20 bg-gradient-to-br from-background via-secondary/20 to-accent/10">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Jammer Benefits Overview</h2>
-          <p className="text-xl text-muted-foreground mb-4 font-semibold">
-            Founding Jammer Perks Table
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Founding Jammer Benefits</h2>
+          
           
         </div>
         
         <Card className="max-w-4xl mx-auto bg-gradient-to-br from-card to-secondary/10 border-grass/20 shadow-lg">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl text-grass">Your Founding Jammer Benefits</CardTitle>
+            <CardTitle className="text-2xl text-grass">Exclusive Perks & Privileges</CardTitle>
             <CardDescription>Exclusive perks and privileges for life</CardDescription>
           </CardHeader>
           <CardContent>

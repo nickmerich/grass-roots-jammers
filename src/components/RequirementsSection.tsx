@@ -28,9 +28,7 @@ const RequirementsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">How It Works</h2>
-          <p className="text-xl text-muted-foreground mb-4 font-semibold">
-            How It Works
-          </p>
+          
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             To claim a spot, each invitee must complete these requirements. 
             Once all 100 spots are claimed, we go public with the campaign.
