@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Instagram, Linkedin } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
 
@@ -113,22 +114,22 @@ const Footer = () => {
         
         {/* Social Links */}
         <div className="flex justify-center gap-6 mb-8">
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="bg-white/80 border border-emerald-200 text-emerald-700 hover:bg-emerald-100 hover:scale-110 transition-all duration-300 shadow-lg rounded-xl w-16 h-16"
-            onClick={() => window.open('https://www.instagram.com/learngrass/', '_blank')}
-          >
-            <span className="text-2xl">📸</span>
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="bg-white/80 border border-emerald-200 text-emerald-700 hover:bg-emerald-100 hover:scale-110 transition-all duration-300 shadow-lg rounded-xl w-16 h-16"
-            onClick={() => window.open('https://www.linkedin.com/company/107383705/admin/dashboard/', '_blank')}
-          >
-            <span className="text-2xl">💼</span>
-          </Button>
+           <Button 
+             variant="outline" 
+             size="lg"
+             className="bg-white/80 border border-emerald-200 text-emerald-700 hover:bg-emerald-100 hover:scale-110 transition-all duration-300 shadow-lg rounded-xl w-16 h-16"
+             onClick={() => window.open('https://www.instagram.com/learngrass/', '_blank')}
+           >
+             <Instagram className="w-6 h-6" />
+           </Button>
+           <Button 
+             variant="outline" 
+             size="lg"
+             className="bg-white/80 border border-emerald-200 text-emerald-700 hover:bg-emerald-100 hover:scale-110 transition-all duration-300 shadow-lg rounded-xl w-16 h-16"
+             onClick={() => window.open('https://www.linkedin.com/company/107383705/admin/dashboard/', '_blank')}
+           >
+             <Linkedin className="w-6 h-6" />
+           </Button>
         </div>
         
         {/* Copyright */}

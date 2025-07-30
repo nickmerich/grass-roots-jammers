@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Smartphone, Gamepad2 } from "lucide-react";
 const steps = [{
   number: "01",
   title: "Fill Out Form",
@@ -59,12 +60,14 @@ const RequirementsSection = () => {
                     Join Slack Channel
                   </Button>}
                 {step.downloadLinks && <div className="flex gap-2 flex-wrap">
-                    <Button variant="outline-grass" size="sm" onClick={() => window.open(step.downloadLinks.ios, '_blank')}>
-                      📱 App Store
-                    </Button>
-                    <Button variant="outline-grass" size="sm" onClick={() => window.open(step.downloadLinks.android, '_blank')}>
-                      🎮 Google Play
-                    </Button>
+                   <Button variant="outline-grass" size="sm" onClick={() => window.open(step.downloadLinks.ios, '_blank')}>
+                     <Smartphone className="w-4 h-4 mr-1" />
+                     App Store
+                   </Button>
+                   <Button variant="outline-grass" size="sm" onClick={() => window.open(step.downloadLinks.android, '_blank')}>
+                     <Gamepad2 className="w-4 h-4 mr-1" />
+                     Google Play
+                   </Button>
                   </div>}
               </CardContent>
             </Card>)}

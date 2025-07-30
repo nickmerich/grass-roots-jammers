@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Smartphone, Gamepad2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MapPin, Calendar, Clock, Music } from "lucide-react";
@@ -215,23 +216,23 @@ const HeroSection = () => {
             {/* App store badges */}
             <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center lg:justify-start pt-6">
               <Button variant="outline" className="h-16 sm:h-18 px-5 sm:px-6 bg-white/95 border border-gray-200 text-gray-800 hover:bg-gray-50 shadow-lg rounded-xl transition-all hover:scale-105" onClick={() => window.open('https://apps.apple.com/us/app/grass-jam-companion/id6741807679', '_blank')}>
-                <div className="flex items-center gap-3 sm:gap-4">
-                  <div className="text-xl sm:text-2xl">📱</div>
-                  <div className="text-left">
-                    <div className="text-xs text-gray-600 font-medium">Download on the</div>
-                    <div className="text-sm font-bold text-gray-900">App Store</div>
-                  </div>
-                </div>
+                 <div className="flex items-center gap-3 sm:gap-4">
+                   <Smartphone className="w-6 h-6 sm:w-8 sm:h-8" />
+                   <div className="text-left">
+                     <div className="text-xs text-gray-600 font-medium">Download on the</div>
+                     <div className="text-sm font-bold text-gray-900">App Store</div>
+                   </div>
+                 </div>
               </Button>
               
               <Button variant="outline" className="h-16 sm:h-18 px-5 sm:px-6 bg-white/95 border border-gray-200 text-gray-800 hover:bg-gray-50 shadow-lg rounded-xl transition-all hover:scale-105" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.learngrass.grass&pcampaignid=web_share', '_blank')}>
-                <div className="flex items-center gap-3 sm:gap-4">
-                  <div className="text-xl sm:text-2xl">🎮</div>
-                  <div className="text-left">
-                    <div className="text-xs text-gray-600 font-medium">Get it on</div>
-                    <div className="text-sm font-bold text-gray-900">Google Play</div>
-                  </div>
-                </div>
+                 <div className="flex items-center gap-3 sm:gap-4">
+                   <Gamepad2 className="w-6 h-6 sm:w-8 sm:h-8" />
+                   <div className="text-left">
+                     <div className="text-xs text-gray-600 font-medium">Get it on</div>
+                     <div className="text-sm font-bold text-gray-900">Google Play</div>
+                   </div>
+                 </div>
               </Button>
             </div>
           </div>
