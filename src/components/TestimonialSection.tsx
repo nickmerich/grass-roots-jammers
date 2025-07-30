@@ -20,24 +20,44 @@ const TestimonialSection = () => {
           </p>
         </div>
         
-        <div className="max-w-3xl mx-auto">
-          <Card className="bg-gradient-to-br from-card to-secondary/10 border-grass/20 shadow-lg btn-musical animate-bounce-in">
-            <CardContent className="p-8 text-center">
-              <div className="text-4xl mb-6 animate-bounce-in" style={{
-              animationDelay: '0.2s'
-            }}>🎵</div>
-              <blockquote className="text-xl text-muted-foreground italic mb-6 leading-relaxed">“A practical and inspiring tool, great for building confidence through structured practice.”</blockquote>
-              <div className="flex items-center justify-center gap-4">
-                <div className="w-12 h-12 bg-grass rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg animate-pulse-glow">
-                  B
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="bg-gradient-to-br from-card to-secondary/10 border-grass/20 shadow-lg btn-musical animate-bounce-in">
+              <CardContent className="p-8 text-center">
+                <div className="text-4xl mb-6 animate-bounce-in" style={{
+                animationDelay: '0.2s'
+              }}>🎵</div>
+                <blockquote className="text-xl text-muted-foreground italic mb-6 leading-relaxed">"A practical and inspiring tool, great for building confidence through structured practice."</blockquote>
+                <div className="flex items-center justify-center gap-4">
+                  <div className="w-12 h-12 bg-grass rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg animate-pulse-glow">
+                    C
+                  </div>
+                  <div className="text-left">
+                    <div className="font-semibold text-foreground">Cameron Olson</div>
+                    <div className="text-sm text-muted-foreground">Engineer Lead @ VCL Audio // Former Berklee College of Music Professor</div>
+                  </div>
                 </div>
-                <div className="text-left">
-                  <div className="font-semibold text-foreground">Cameron Olson</div>
-                  <div className="text-sm text-muted-foreground">Engineer Lead @ VCL Audio // Former Berklee College of Music Professor</div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-card to-secondary/10 border-grass/20 shadow-lg btn-musical animate-bounce-in">
+              <CardContent className="p-8 text-center">
+                <div className="text-4xl mb-6 animate-bounce-in" style={{
+                animationDelay: '0.4s'
+              }}>🎸</div>
+                <blockquote className="text-xl text-muted-foreground italic mb-6 leading-relaxed">"This App reconnected me with my bluegrass roots. I haven't enjoyed playing this much in years."</blockquote>
+                <div className="flex items-center justify-center gap-4">
+                  <div className="w-12 h-12 bg-grass rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg animate-pulse-glow">
+                    A
+                  </div>
+                  <div className="text-left">
+                    <div className="font-semibold text-foreground">Anonymous User</div>
+                    <div className="text-sm text-muted-foreground">Community Member</div>
+                  </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </div>
         
         <div className="text-center mt-12">
