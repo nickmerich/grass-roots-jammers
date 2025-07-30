@@ -38,9 +38,7 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-bounce-in">Founding Jammer Benefits</h2>
-          <p className="text-xl text-muted-foreground mb-4 font-semibold">
-            Why Join as a Founding Jammer?
-          </p>
+          <p className="text-xl text-muted-foreground mb-4 font-semibold">Be Part of the Bluegrass Revival</p>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             🚀 Get exclusive access, recognition, and the power to shape Grass future while building 
             lifelong connections from beginners to leaders in the bluegrass community.
