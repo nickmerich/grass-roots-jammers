@@ -2,7 +2,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 const perks = [{
   perk: "Founding Badge",
-  description: "Special badge beside your username—forever!"
+  description: "Special badge beside your username"
 }, {
   perk: "Launch Events",
   description: "Invitation to exclusive live and virtual jams with other Founding Jammers"
