@@ -10,7 +10,7 @@ const CounterSection = () => {
       <div className="absolute inset-0 opacity-10">
         <div className="musical-instrument animate-float-slow top-10 left-10">🪕</div>
         <div className="musical-instrument animate-float-medium top-20 right-10">🎻</div>
-        <div className="musical-instrument animate-float-fast bottom-20 left-1/3">🪕</div>
+        <div className="musical-instrument animate-float-fast bottom-20 left-1/3">🎸</div>
         <div className="musical-instrument animate-float-slow bottom-10 right-1/4">🪗</div>
         <div className="musical-note animate-slide-musical top-1/3" style={{animationDelay: '1s'}}>♪</div>
         <div className="musical-note animate-slide-musical top-2/3" style={{animationDelay: '3s'}}>♫</div>
