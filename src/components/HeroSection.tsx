@@ -246,9 +246,7 @@ const HeroSection = () => {
                   <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
                   Join Now
                 </div>
-                <h3 className="text-xl sm:text-2xl font-black text-emerald-800 mb-2">
-                  Founding Jammer Session
-                </h3>
+                <h3 className="text-xl sm:text-2xl font-black text-emerald-800 mb-2">Join a Founding Jammer Session</h3>
                 <div className="flex items-center justify-center gap-2 text-emerald-600">
                   <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="font-semibold text-sm sm:text-base cursor-pointer hover:text-emerald-700 transition-colors" onClick={() => window.open('https://join.slack.com/share/enQtOTI3MzAyNDMyNDUwMC01MGExOGZiMjcyMjVlZGU1NzQ5ZDhlMGNlYzU1NDRmYmI2OTg2ZTNlNzIzMTZjNjNiYWRiM2NlYWUxOGQwYzQz', '_blank')}>Bluegrass Community</span>
