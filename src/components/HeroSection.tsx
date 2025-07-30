@@ -4,7 +4,6 @@ import googlePlayBadge from "@/assets/google-play-badge.png";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MapPin, Calendar, Clock, Music } from "lucide-react";
-import ContactModal from "./ContactModal";
 const HeroSection = () => {
   return <section data-section="hero" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-emerald-800 via-green-800 to-emerald-900 pt-20 sm:pt-24 lg:pt-16">
       {/* Fun doodle-style background */}
@@ -210,13 +209,9 @@ const HeroSection = () => {
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm sm:text-base lg:text-lg py-5 sm:py-6 px-6 sm:px-8 lg:px-10 rounded-xl shadow-xl transition-all hover:scale-105 hover:shadow-2xl" onClick={() => window.open('https://tally.so/r/wv8RdQ', '_blank')}>
                 ✅ Become One of The First 100!
               </Button>
-              <ContactModal
-                trigger={
-                  <Button variant="outline" size="lg" className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-sm sm:text-base lg:text-lg py-5 sm:py-6 px-6 sm:px-8 lg:px-10 rounded-xl transition-all hover:scale-105">
-                    📩 Contact Us
-                  </Button>
-                }
-              />
+              <Button variant="outline" size="lg" className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-sm sm:text-base lg:text-lg py-5 sm:py-6 px-6 sm:px-8 lg:px-10 rounded-xl transition-all hover:scale-105" onClick={() => window.location.href = 'mailto:join@learngrass.com'}>
+                📩 Contact Us
+              </Button>
             </div>
             
             {/* App store badges */}

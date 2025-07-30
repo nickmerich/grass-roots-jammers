@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Instagram, Linkedin } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
-import ContactModal from "./ContactModal";
 
 const faqs = [
   {
@@ -104,16 +103,13 @@ const Footer = () => {
           <p className="text-lg text-emerald-700 mb-6 max-w-2xl mx-auto">
             We're here to help you make the right decision for your bluegrass journey.
           </p>
-          <ContactModal
-            trigger={
-              <Button 
-                variant="outline" 
-                className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold px-8 py-3 rounded-xl transition-all hover:scale-105 shadow-lg"
-              >
-                📩 Contact Us
-              </Button>
-            }
-          />
+          <Button 
+            variant="outline" 
+            className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold px-8 py-3 rounded-xl transition-all hover:scale-105 shadow-lg"
+            onClick={() => window.location.href = 'mailto:join@learngrass.com'}
+          >
+            📩 Contact Us
+          </Button>
         </div>
         
         {/* Social Links */}
