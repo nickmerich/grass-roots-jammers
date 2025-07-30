@@ -195,9 +195,7 @@ const HeroSection = () => {
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-black bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent leading-tight tracking-tight drop-shadow-lg">Become a Founding Jammer</h1>
               
               {/* Subheadline */}
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl bg-gradient-to-br from-white to-white/85 bg-clip-text text-transparent font-bold drop-shadow-lg">
-                Go-to Jam Companion for Aspiring Musicians
-              </p>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl bg-gradient-to-br from-white to-white/85 bg-clip-text text-transparent font-bold drop-shadow-lg">Go-to Jam Companion for Aspiring Musicians</p>
               
               <p className="text-sm sm:text-base lg:text-lg bg-gradient-to-br from-white/95 to-white/80 bg-clip-text text-transparent leading-relaxed max-w-2xl drop-shadow-lg">
                 Grass is the #1 app for learning and playing bluegrass. Access 200+ classic songs, join local jam circles, track your progress, and connect with musicians nationwide. Whether you're just starting out or leading your own jam, Grass helps you grow your skills, your circle, and your confidence.
