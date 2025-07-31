@@ -32,7 +32,7 @@ const CounterSection = () => {
             {/* Spots Claimed */}
             <Card className="bg-gradient-to-br from-grass/10 to-grass/5 border-grass/30 text-center btn-musical animate-bounce-in" style={{animationDelay: '0.1s'}}>
               <CardHeader>
-                <div className="text-5xl font-bold text-grass mb-2 animate-pulse-glow">2</div>
+                <div className="text-5xl font-bold text-grass mb-2 animate-pulse-glow">6</div>
                 <Badge className="bg-grass/20 text-grass hover:bg-grass/30 mx-auto">
                   🏆 Spots Claimed
                 </Badge>
@@ -45,7 +45,7 @@ const CounterSection = () => {
             {/* Spots Remaining */}
             <Card className="bg-gradient-to-br from-accent/10 to-accent/5 border-accent/30 text-center btn-musical animate-bounce-in" style={{animationDelay: '0.2s'}}>
               <CardHeader>
-                <div className="text-5xl font-bold text-grass mb-2 animate-pulse-glow">98</div>
+                <div className="text-5xl font-bold text-grass mb-2 animate-pulse-glow">94</div>
                 <Badge className="bg-accent/20 text-grass hover:bg-accent/30 mx-auto">
                   🎯 Spots Remaining
                 </Badge>
@@ -58,7 +58,7 @@ const CounterSection = () => {
             {/* Percentage Filled */}
             <Card className="bg-gradient-to-br from-destructive/10 to-destructive/5 border-destructive/30 text-center btn-musical animate-bounce-in" style={{animationDelay: '0.3s'}}>
               <CardHeader>
-                <div className="text-5xl font-bold text-grass mb-2 animate-pulse-glow">2%</div>
+                <div className="text-5xl font-bold text-grass mb-2 animate-pulse-glow">6%</div>
                 <Badge className="bg-destructive/20 text-grass hover:bg-destructive/30 mx-auto">
                   🔥 Filled
                 </Badge>
@@ -81,7 +81,7 @@ const CounterSection = () => {
             </Button>
             
             <p className="text-sm text-grass">
-              <span className="font-semibold text-grass">2/100</span> have been claimed
+              <span className="font-semibold text-grass">6/100</span> have been claimed
             </p>
             <p className="text-sm text-grass font-semibold mt-1">
               Don't miss your chance!
